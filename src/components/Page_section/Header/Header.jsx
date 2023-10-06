@@ -1,6 +1,7 @@
 import React from 'react';
 import style from './Header.module.css';
 import Logo from '../../images/logo.png'
+import ToggleTheme from 'components/elements/ToggleTeme/ToggleTheme';
 
 const Header = () => {
 
@@ -32,10 +33,7 @@ const Header = () => {
 
 
       {/* Toogle switches */}
-      <div className={style.checkbox_apple}>
-        <input className={style.yep} id="check-apple" type="checkbox"/>
-        <label for="check-apple"></label>
-      </div>
+        <ToggleTheme/>
     </div>
   )
 }

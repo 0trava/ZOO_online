@@ -14,6 +14,31 @@ code {
     monospace;
 }
 
+/* TOGGLE THEME  */
+
+
+[data-theme = 'dark'] {
+  --body-color: #333333;
+  --text-color: #F2F2F2;
+
+}
+
+
+[data-theme = 'light'] {
+  --body-color: #FFF;
+  --text-color: #333333;
+}
+
+
+
+
+
+
+
+
+
+
+
 /* -------------------------------------------------- */
 
 html {

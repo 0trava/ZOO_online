@@ -7,6 +7,7 @@
     align-items: center;
     flex-direction: column;
     gap: 30px;
+    background-color: var(--body-color);
 }
 
 .body div {
@@ -19,7 +20,7 @@
 
 /* Content */
 .title {
-    color: var(--Gray-1, #333);
+    color: var(--text-color);
 
     /* title_style */
     font-family: Roboto;
@@ -32,7 +33,7 @@
 
 
 .text {
-    color: var(--Gray-2, #4F4F4F);
+    color: var(--text-color);
 
     /* txt_style */
     font-family: Roboto;
