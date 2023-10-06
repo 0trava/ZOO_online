@@ -93,7 +93,7 @@
 }
 
 .button:hover {
-    box-shadow: 1px 1px 200px #252525;
+    box-shadow: 1px 1px 200px var(--text-color);
     background: var(--base_gradient, linear-gradient(107deg, #45e4bc -14.32%, #30d8e4 100.68%));
 
   }
