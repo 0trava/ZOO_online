@@ -1,7 +1,7 @@
 /* Body */
 .body {
     background-image: url('../../images/hero/hero_desk@1x.jpg');
-    height: 940px;
+    height: 100vh;
     background-position: center;
     background-size: cover;
 
@@ -81,7 +81,7 @@
     font-weight: 900;
     line-height: normal;
     text-transform: uppercase;
-    transition: all 0.5s ease-in-out;
+    transition: all 0.2s cubic-bezier(0.01, 0.59, 1, 0.59);
     cursor: pointer;
 }
 
@@ -92,6 +92,8 @@
 
 .button:hover {
     box-shadow: 1px 1px 200px #252525;
+    background: var(--base_gradient, linear-gradient(107deg, #45e4bc -14.32%, #30d8e4 100.68%));
+
   }
 
   /* gallery */
