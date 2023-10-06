@@ -15,9 +15,6 @@ const Testimonials = () => {
       <button type='button' className={style.button}>
           <span className={style.btn_txt}>Leave feedback</span>
       </button>
-
-
-
     </div>
   )
 }

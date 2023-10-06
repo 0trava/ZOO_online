@@ -20,15 +20,16 @@ code {
 [data-theme = 'dark'] {
   --body-color: #333333;
   --text-color: #F2F2F2;
+  --text-color-second: #FEFEFE;
   --body-second-color: #4F4F4F;
-  --text-color-2: #FEFEFE;
+
 }
 
 
 [data-theme = 'light'] {
   --body-color: #FFF;
   --text-color: #333333;
-  --text-color-2: #4F4F4F;
+  --text-color-second: #4F4F4F;
   --body-second-color: #F2F2F2;
   
 }

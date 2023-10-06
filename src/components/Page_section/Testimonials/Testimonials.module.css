@@ -9,6 +9,19 @@
     gap: 30px;
 }
 
+.title {
+    color: var(--text-color-second, #F2F2F2);
+    text-align: center;
+    margin-bottom: 30px;
+    
+    /* title_style */
+    font-family: Roboto;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+}
+
 
 /* Button */
 .button {
@@ -35,18 +48,7 @@
     cursor: pointer;
 }
 
-.title {
-    color: var(--text-color-2, #F2F2F2);
-    text-align: center;
-    margin-bottom: 30px;
-    
-    /* title_style */
-    font-family: Roboto;
-    font-size: 48px;
-    font-style: normal;
-    font-weight: 900;
-    line-height: normal;
-}
+
 
 .button_span {
     width: 32px;

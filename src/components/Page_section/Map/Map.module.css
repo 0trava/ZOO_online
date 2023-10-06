@@ -1,0 +1,28 @@
+.body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    padding-top: 100px;
+    padding-bottom: 100px;
+
+
+
+    background-color: var(--body-second-color);
+    
+}
+
+.title {
+    color: var(--text-color-second, #F2F2F2);
+    text-align: center;
+    margin-bottom: 30px;
+    pointer-events: none;
+    
+    /* title_style */
+    font-family: Roboto;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+}
