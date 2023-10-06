@@ -1,4 +1,4 @@
-import Benefots from "./Page_section/Benefits/Benefots";
+import Benefots from "./Page_section/Benefits/Benefits";
 import Footer from "./Page_section/Footer/Footer";
 import Header from "./Page_section/Header/Header";
 import Hero from "./Page_section/Hero/Hero";

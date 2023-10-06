@@ -1,0 +1,51 @@
+
+.body {
+    background-color: var(--body-second-color);
+    padding-top: 100px;
+    padding-bottom: 100px;
+    display: flex;
+    justify-content: center;
+
+    gap: 30px;
+}
+
+.benefit {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 15px;
+    width: 380px;
+
+}
+
+.benefit img {
+    width: 80px;
+    height: 80px;
+    pointer-events: none;
+}
+
+.benefit h3 {
+    color: var(--text-color);
+    text-align: center;
+    pointer-events: none;
+
+    /* h3 */
+    font-family: Roboto;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+}
+
+.benefit p {
+    color: var(--text-color);
+    pointer-events: none;
+
+    /* txt_style */
+    font-family: Roboto;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
