@@ -20,6 +20,9 @@ const Footer = () => {
            <p>132, Address District, Street</p>
            <p>Open Daily 10:00 am - 5:00 pm</p>
 
+           <p>T(702) 163-3433</p>
+           <p>zoo.online@gmail.com</p>
+
         </div>
         
 
