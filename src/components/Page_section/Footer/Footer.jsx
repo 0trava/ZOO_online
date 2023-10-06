@@ -24,6 +24,7 @@ const Footer = () => {
            <p>zoo.online@gmail.com</p>
 
            <div>srfeqr</div>
+           <p>wqe</p>
 
         </div>
         
