@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/ZOO_online/static/css/main.5554b915.css",
+    "main.css": "/ZOO_online/static/css/main.ab330428.css",
     "main.js": "/ZOO_online/static/js/main.544be0cf.js",
     "static/media/hero_desk@2x.jpg": "/ZOO_online/static/media/hero_desk@2x.65337ff96ce5179ce302.jpg",
     "static/media/hero_desk@1x.jpg": "/ZOO_online/static/media/hero_desk@1x.ac8e594cc0fd663fbf0a.jpg",
     "index.html": "/ZOO_online/index.html",
-    "main.5554b915.css.map": "/ZOO_online/static/css/main.5554b915.css.map",
+    "main.ab330428.css.map": "/ZOO_online/static/css/main.ab330428.css.map",
     "main.544be0cf.js.map": "/ZOO_online/static/js/main.544be0cf.js.map"
   },
   "entrypoints": [
-    "static/css/main.5554b915.css",
+    "static/css/main.ab330428.css",
     "static/js/main.544be0cf.js"
   ]
 }
