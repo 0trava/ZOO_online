@@ -21,13 +21,14 @@ code {
   --body-color: #333333;
   --text-color: #F2F2F2;
   --body-second-color: #4F4F4F;
-
+  --text-color-2: #FEFEFE;
 }
 
 
 [data-theme = 'light'] {
   --body-color: #FFF;
   --text-color: #333333;
+  --text-color-2: #4F4F4F;
   --body-second-color: #F2F2F2;
   
 }
