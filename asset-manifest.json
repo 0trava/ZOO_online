@@ -1,8 +1,9 @@
 {
   "files": {
-    "main.css": "/ZOO_online/static/css/main.6dde0ac3.css",
-    "main.js": "/ZOO_online/static/js/main.bf16c93b.js",
+    "main.css": "/ZOO_online/static/css/main.388fc8e3.css",
+    "main.js": "/ZOO_online/static/js/main.9062050c.js",
     "static/media/hero_desk@2x.jpg": "/ZOO_online/static/media/hero_desk@2x.65337ff96ce5179ce302.jpg",
+    "static/media/Map.svg": "/ZOO_online/static/media/Map.6218d5b05f73a08c9cfd73c76102b028.svg",
     "static/media/hero_desk@1x.jpg": "/ZOO_online/static/media/hero_desk@1x.ac8e594cc0fd663fbf0a.jpg",
     "static/media/problem-solving.svg": "/ZOO_online/static/media/problem-solving.208dcafab0eec086e81243da5dd3a5a5.svg",
     "static/media/zoo.svg": "/ZOO_online/static/media/zoo.18b818c0483d715784f229e728d2f5ae.svg",
@@ -11,11 +12,11 @@
     "static/media/achievement.svg": "/ZOO_online/static/media/achievement.772ab37001179f570862c3964525493a.svg",
     "static/media/cards.svg": "/ZOO_online/static/media/cards.8d8a6008e9e99c60485733181cebe96a.svg",
     "index.html": "/ZOO_online/index.html",
-    "main.6dde0ac3.css.map": "/ZOO_online/static/css/main.6dde0ac3.css.map",
-    "main.bf16c93b.js.map": "/ZOO_online/static/js/main.bf16c93b.js.map"
+    "main.388fc8e3.css.map": "/ZOO_online/static/css/main.388fc8e3.css.map",
+    "main.9062050c.js.map": "/ZOO_online/static/js/main.9062050c.js.map"
   },
   "entrypoints": [
-    "static/css/main.6dde0ac3.css",
-    "static/js/main.bf16c93b.js"
+    "static/css/main.388fc8e3.css",
+    "static/js/main.9062050c.js"
   ]
 }
