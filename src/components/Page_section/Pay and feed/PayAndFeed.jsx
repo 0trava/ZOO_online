@@ -58,6 +58,11 @@ const PayAndFeed = () => {
           <p>Panda gets the bamboo</p>
         </li>
       </ul>
+
+      {/* Button */}
+      <button type='button' className={style.button}>
+          <span className={style.btn_txt}>donate</span>
+      </button>
     </div>
   );
 };
