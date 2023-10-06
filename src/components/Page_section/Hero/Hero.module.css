@@ -1,10 +1,14 @@
 /* Body */
 .body {
     background-image: url('../../images/hero/hero_desk@1x.jpg');
-    height: 940px;
+    height: 722px;
     background-position: center;
+    background-size: cover;
 
     display: flex;
+    padding-left: 150px;
+    padding-right: 150px;
+
 }
 
 /* Styles for 2x screens (high-resolution screens) */
@@ -14,3 +18,74 @@
         /* Adjust height and other styles for 2x screens as needed */
     }
 }
+
+/* Social link */
+.social_block {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    /* align-items: start; */
+    margin-bottom: 111px;
+    width: 210px;
+
+    gap: 15px;
+}
+
+.social_link {
+    fill: #FEFEFE;
+    width: 20px;
+    height: 20px;
+    transition: all 0.2s cubic-bezier(0.01, 0.59, 1, 0.59);
+}
+
+.social_link:hover, .social_link:focus {
+    scale: 1.2;
+}
+
+/* Content */
+.content {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20vh;
+    gap: 37px;
+}
+.title {
+    color: var(--base, #FEFEFE);
+    font-family: Roboto;
+    font-size: 6vw;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+}
+
+.button {
+    width: 245px;
+    height: 55px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+
+    border-radius: 3px;
+    border-color: transparent;
+    background: var(--base_gradient, linear-gradient(107deg, #4BD8B5 -14.32%, #49D6DF 100.68%));
+
+    color: #FFF;
+    text-align: center;
+    font-family: Roboto;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+    text-transform: uppercase;
+    transition: all 0.5s ease-in-out;
+}
+
+.button_span {
+    width: 32px;
+    height: 32px;
+}
+
+.button:hover {
+    box-shadow: 1px 1px 200px #252525;
+  }
