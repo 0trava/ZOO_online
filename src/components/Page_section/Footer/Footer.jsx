@@ -15,6 +15,10 @@ const Footer = () => {
         </div>
 
         <div>
+           <h3 className={style.title}>ZOO Online Centre</h3>
+
+           <p>132, Address District, Street</p>
+           <p>Open Daily 10:00 am - 5:00 pm</p>
 
         </div>
         
