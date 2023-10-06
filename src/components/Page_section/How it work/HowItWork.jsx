@@ -21,7 +21,7 @@ const HowItWork = () => {
         impact of the 2020 Australian bushfires on precious species and their
         habitat.
       </p>
-
+      </div>
       {/* Slider */}
       <div>
 
@@ -31,7 +31,7 @@ const HowItWork = () => {
           <GoPlay className={style.button_span}/>
           <span class="btn-txt">watch online</span>
         </button>
-      </div>
+
     </div>
   );
 };
