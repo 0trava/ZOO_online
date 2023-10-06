@@ -11,9 +11,9 @@ const Footer = () => {
         <div>
           <img className={style.logo} src={logo} alt="logo" />
 
-          <h3>Contact us</h3>
+          <h3 className={style.title}>Contact us</h3>
         </div>
-        
+
         <div>
 
         </div>
