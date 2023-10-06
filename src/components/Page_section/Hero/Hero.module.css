@@ -1,0 +1,16 @@
+/* Body */
+.body {
+    background-image: url('../../images/hero/hero_desk@1x.jpg');
+    height: 940px;
+    background-position: center;
+
+    display: flex;
+}
+
+/* Styles for 2x screens (high-resolution screens) */
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+    .body {
+        background-image: url('../../images/hero/hero_desk@2x.jpg');
+        /* Adjust height and other styles for 2x screens as needed */
+    }
+}

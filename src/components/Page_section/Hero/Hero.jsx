@@ -1,8 +1,22 @@
-import React from 'react'
+import React from 'react';
+import style from './Hero.module.css';
 
 const Hero = () => {
   return (
-    <div>Hero</div>
+    <div className={style.body}>
+      {/* Social link */}
+      <div>
+
+      </div>
+
+      {/* Content */}
+      <div>
+
+      </div>
+
+      {/* Slider */}
+
+    </div>
   )
 }
 

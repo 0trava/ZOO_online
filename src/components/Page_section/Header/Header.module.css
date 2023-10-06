@@ -83,7 +83,7 @@
   }
   
   .checkbox_apple input[type="checkbox"]:checked + label {
-    background: linear-gradient(to bottom, #4cd964, #5de24e);
+    background: linear-gradient(to bottom, #4F4F4F, #4d4c4c);
   }
   
   .checkbox_apple input[type="checkbox"]:checked + label:after {
