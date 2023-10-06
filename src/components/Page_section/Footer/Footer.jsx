@@ -23,6 +23,8 @@ const Footer = () => {
            <p>T(702) 163-3433</p>
            <p>zoo.online@gmail.com</p>
 
+           <div>srfeqr</div>
+
         </div>
         
 
