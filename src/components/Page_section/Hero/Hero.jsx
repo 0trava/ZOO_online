@@ -39,7 +39,10 @@ const Hero = () => {
           </button>
       </div>
 
-      {/* Slider */}
+      {/* Gallery */}
+      <div className={style.gallery}>
+
+      </div>
 
     </div>
   )

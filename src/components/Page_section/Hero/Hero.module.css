@@ -1,13 +1,14 @@
 /* Body */
 .body {
     background-image: url('../../images/hero/hero_desk@1x.jpg');
-    height: 722px;
+    height: 940px;
     background-position: center;
     background-size: cover;
 
     display: flex;
     padding-left: 150px;
     padding-right: 150px;
+    position: relative;
 
 }
 
@@ -48,6 +49,7 @@
     flex-direction: column;
     margin-top: 20vh;
     gap: 37px;
+    width: 60vw;
 }
 .title {
     color: var(--base, #FEFEFE);
@@ -56,6 +58,7 @@
     font-style: normal;
     font-weight: 900;
     line-height: normal;
+    pointer-events: none;
 }
 
 .button {
@@ -79,6 +82,7 @@
     line-height: normal;
     text-transform: uppercase;
     transition: all 0.5s ease-in-out;
+    cursor: pointer;
 }
 
 .button_span {
@@ -88,4 +92,16 @@
 
 .button:hover {
     box-shadow: 1px 1px 200px #252525;
+  }
+
+  /* gallery */
+  .gallery {
+    position: absolute;
+    bottom: 100px;
+    right: -44px;
+
+    background-color: none;
+    border: 1px solid red;
+    height: 420px;
+    width: 1000px;
   }
