@@ -14,7 +14,7 @@
 }
 
 .title {
-    color: var(--text-color-2, #F2F2F2);
+    color: var(--text-color-2);
     text-align: center;
     margin-bottom: 30px;
     

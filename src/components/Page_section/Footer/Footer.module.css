@@ -172,11 +172,14 @@
     width: 80vw;
     display: flex;
     flex-direction: column;
+    justify-content: flex-start;
     margin-top: 28px;
     gap: 5px;
   }
 
   .description a {
+    display: flex;
+    width: 240px;
     color: var(--Gray-4, #BDBDBD);
     font-family: Roboto;
     font-size: 12px;

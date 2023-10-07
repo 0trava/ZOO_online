@@ -1,9 +1,14 @@
 import React from 'react';
 import style from './Header.module.css';
-import Logo from '../../images/logo.png'
+
+// Images
+import LogoLight from '../../images/logo.png';
+import LogoDark from '../../images/logo.svg';
+
 import ToggleTheme from 'components/elements/ToggleTeme/ToggleTheme';
 
 const Header = () => {
+
 
 
   const checkForActive = (active) => {
@@ -14,12 +19,22 @@ const Header = () => {
     }
   }
 
+  const checkTheme = () => {
+    const them = localStorage.getItem('theme');
+    console.log(them);
+    if ( them === "light") {
+      return LogoLight;
+    } else {
+      return LogoDark;
+    }
+  }
+
 
   return (
     <div className={style.body}>
       {/* Logo */}
       <div>
-        <img className={style.logo}src={Logo} alt="logo" />
+        <img className={style.logo} src={checkTheme()} alt="logo" />
       </div>
 
       {/* Link */}

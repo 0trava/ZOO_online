@@ -1,22 +1,32 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import style from './ToggleTheme.module.css';
 
 const ToggleTheme = () => {
-  const [ theme, setTheme ] = useState(false);
+  const [ theme, setTheme ] = useState("light");
+  const them = localStorage.getItem('theme');
+
+  useEffect (() => {
+     setTheme(them);
+     document.documentElement.setAttribute('data-theme', theme)
+     // eslint-disable-next-line
+  }, [])
+ 
+
 
   function handleClick() {
 
     // LIGHT
-    if (theme === true) {
-      setTheme(false);
+    if (theme === "dark") {
+      setTheme("light");
       document.documentElement.setAttribute('data-theme', "light")
+      localStorage.setItem('theme', 'light');
 
     }
     // DADK
     else {
-      setTheme(true);
+      setTheme("dark");
       document.documentElement.setAttribute('data-theme', "dark")
-
+      localStorage.setItem('theme', 'dark');
     }
 
   }
