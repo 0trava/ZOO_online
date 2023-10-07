@@ -14,7 +14,7 @@
 }
 
 .title {
-    color: var(--text-color-2);
+    color: var(--text-color-second);
     text-align: center;
     margin-bottom: 30px;
     
@@ -65,7 +65,7 @@
 }
 
 .list_item p {
-    color: var(--text-color-2);
+    color: var(--text-color-second);
     text-align: center;
     width: 134px;
     pointer-events: none;

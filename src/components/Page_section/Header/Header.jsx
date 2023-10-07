@@ -3,12 +3,12 @@ import style from './Header.module.css';
 
 // Images
 import LogoLight from '../../images/logo.png';
-import LogoDark from '../../images/logo.svg';
+import LogoDark from '../../images/logoDark.png';
 
 import ToggleTheme from 'components/elements/ToggleTeme/ToggleTheme';
 
 const Header = () => {
-
+  const them = localStorage.getItem('theme');
 
 
   const checkForActive = (active) => {
@@ -19,22 +19,16 @@ const Header = () => {
     }
   }
 
-  const checkTheme = () => {
-    const them = localStorage.getItem('theme');
-    console.log(them);
-    if ( them === "light") {
-      return LogoLight;
-    } else {
-      return LogoDark;
-    }
-  }
-
 
   return (
     <div className={style.body}>
       {/* Logo */}
       <div>
-        <img className={style.logo} src={checkTheme()} alt="logo" />
+        {them === "light" ? 
+        <img className={style.logo} src={LogoLight} alt="logo" />
+        : <img className={style.logo} src={LogoDark} alt="logo" />
+        }
+        
       </div>
 
       {/* Link */}
