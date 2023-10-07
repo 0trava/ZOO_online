@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "/ZOO_online/static/css/main.e6ffd7ef.css",
-    "main.js": "/ZOO_online/static/js/main.359b3065.js",
+    "main.css": "/ZOO_online/static/css/main.4f64d59b.css",
+    "main.js": "/ZOO_online/static/js/main.5ea4466f.js",
     "static/media/hero_desk@2x.jpg": "/ZOO_online/static/media/hero_desk@2x.65337ff96ce5179ce302.jpg",
     "static/media/Map.svg": "/ZOO_online/static/media/Map.6218d5b05f73a08c9cfd73c76102b028.svg",
     "static/media/hero_desk@1x.jpg": "/ZOO_online/static/media/hero_desk@1x.ac8e594cc0fd663fbf0a.jpg",
-    "static/media/problem-solving.svg": "/ZOO_online/static/media/problem-solving.208dcafab0eec086e81243da5dd3a5a5.svg",
-    "static/media/zoo.svg": "/ZOO_online/static/media/zoo.18b818c0483d715784f229e728d2f5ae.svg",
-    "static/media/panda.svg": "/ZOO_online/static/media/panda.94acdfc45945fff6ba6f0b1ecd1eb7cb.svg",
-    "static/media/love.svg": "/ZOO_online/static/media/love.ae58e0854544c33cc940fca026aaa026.svg",
+    "static/media/problem-solving.svg": "/ZOO_online/static/media/problem-solving.6ca1a7570bd222bfbe9b3c08b8cb8bbf.svg",
+    "static/media/zoo.svg": "/ZOO_online/static/media/zoo.b89ea885f327f35028eebe7b36728e1a.svg",
+    "static/media/panda.svg": "/ZOO_online/static/media/panda.b98397bb5166bd286e2eb71b448de0ed.svg",
+    "static/media/love.svg": "/ZOO_online/static/media/love.a3f79028260ce7269e8dde25cdb8950f.svg",
     "static/media/logo.svg": "/ZOO_online/static/media/logo.16babf7233b2f20126cf7627cb125121.svg",
-    "static/media/achievement.svg": "/ZOO_online/static/media/achievement.772ab37001179f570862c3964525493a.svg",
-    "static/media/cards.svg": "/ZOO_online/static/media/cards.8d8a6008e9e99c60485733181cebe96a.svg",
+    "static/media/achievement.svg": "/ZOO_online/static/media/achievement.4e51d0feaf31ccbe53625f62015e4412.svg",
+    "static/media/cards.svg": "/ZOO_online/static/media/cards.5450356e15c486a0596bd301448d21ac.svg",
     "index.html": "/ZOO_online/index.html",
-    "main.e6ffd7ef.css.map": "/ZOO_online/static/css/main.e6ffd7ef.css.map",
-    "main.359b3065.js.map": "/ZOO_online/static/js/main.359b3065.js.map"
+    "main.4f64d59b.css.map": "/ZOO_online/static/css/main.4f64d59b.css.map",
+    "main.5ea4466f.js.map": "/ZOO_online/static/js/main.5ea4466f.js.map"
   },
   "entrypoints": [
-    "static/css/main.e6ffd7ef.css",
-    "static/js/main.359b3065.js"
+    "static/css/main.4f64d59b.css",
+    "static/js/main.5ea4466f.js"
   ]
 }
