@@ -4,6 +4,12 @@ import style from './Footer.module.css';
 // images
 import logo from '../../images/logo.svg'
 
+// import icons
+import {FaInstagram} from 'react-icons/fa';
+import {FaTwitter} from 'react-icons/fa';
+import {FaYoutube} from 'react-icons/fa';
+import {FaFacebookSquare} from 'react-icons/fa';
+
 const Footer = () => {
   return (
     <div className={style.body}>
@@ -42,6 +48,20 @@ const Footer = () => {
               </div>
 
               {/* Social link */}
+              <div className={style.social_block}>
+                <a href="./">
+                <FaInstagram className={style.social_link}/>
+                </a>
+                <a href="./">
+                <FaTwitter className={style.social_link}/>
+                </a>
+                <a href="./">
+                <FaYoutube  className={style.social_link}/>
+                </a>
+                <a href="./">
+                <FaFacebookSquare  className={style.social_link}/>
+                </a>       
+              </div>
 
            </div>
 

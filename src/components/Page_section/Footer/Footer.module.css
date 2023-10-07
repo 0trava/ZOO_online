@@ -43,6 +43,8 @@
 
 .block_second {
     display: flex;
+    gap: 116px;
+
 }
 
 /* Link Block */
@@ -69,6 +71,29 @@
 
 .link:hover, .link:focus {
   font-weight: 900;
+}
+
+
+/* Social link */
+.social_block {
+    display: flex;
+    justify-content: flex-start;
+    /* align-items: start; */
+    margin-top: 20px;
+    width: 210px;
+
+    gap: 15px;
+}
+
+.social_link {
+    fill: #FEFEFE;
+    width: 20px;
+    height: 20px;
+    transition: all 0.2s cubic-bezier(0.01, 0.59, 1, 0.59);
+}
+
+.social_link:hover, .social_link:focus {
+    scale: 1.2;
 }
 
 
