@@ -29,7 +29,7 @@ const HowItWork = () => {
       {/* Button */}
       <button type='button' className={style.button}>
           <GoPlay className={style.button_span}/>
-          <span class="btn-txt">watch online</span>
+          <span  className ={style.btn_txt}>watch online</span>
         </button>
 
     </div>

@@ -58,6 +58,17 @@
     height: 32px;
 }
 
+.button span {
+    color: #FFF;
+    text-align: center;
+    font-family: Roboto;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+    text-transform: uppercase;
+}
+
 .button:hover {
     box-shadow: 1px 1px 200px var(--text-color);
     background: var(--base_gradient, linear-gradient(107deg, #45e4bc -14.32%, #30d8e4 100.68%));

@@ -35,7 +35,7 @@ const ToggleTheme = () => {
   return (
         <div className={style.checkbox_apple} >
           <input className={style.yep} id="check-apple" type="checkbox" onClick={handleClick}/>
-          <label for="check-apple"></label>
+          <label htmlFor="check-apple"></label>
         </div>
   )
 }
