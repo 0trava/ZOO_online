@@ -51,15 +51,16 @@ const FormFooter = () => {
 
             {/* Message */}
             <div className={style.input_message}>
-              <p></p>
-              <Field name="message" type="textarea" />
+              <p>Please enter your message</p>
+              <Field name="message" type="text" as="textarea" className={style.input} rows="6" cols="30"/>
               {errors.message && touched.message ? (
-                <div>{errors.message}</div>
+                <div className={style.input_errors}>{errors.message}</div>
               ) : null}  
             </div>
 
 
             {/* button */}
+            <div className={style.form_btn}>
             <button type="submit" className={style.button}>
               Send 
               <span>
@@ -68,6 +69,7 @@ const FormFooter = () => {
                 </svg>
               </span>
             </button>
+            </div>
           </Form>
         )}
       </Formik>
