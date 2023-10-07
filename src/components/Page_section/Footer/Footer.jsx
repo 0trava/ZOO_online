@@ -13,9 +13,11 @@ import {FaFacebookSquare} from 'react-icons/fa';
 const Footer = () => {
   return (
     <div className={style.body}>
-      {/* BLOCK - 1 */}
-      <div >
+      <div className={style.blocks}>
 
+      
+      {/* BLOCK - 1 */}
+      <div>
         <div className={style.block_first}>
           <img className={style.logo} src={logo} alt="logo" />
         </div>
@@ -73,6 +75,19 @@ const Footer = () => {
             </button>
           </div>
         </div>
+
+        </div>
+
+        {/* BLOCK - 3 */}
+        <div className={style.block_therd}>
+          <div className={style.lyne}></div>
+          <div className={style.description}>
+            <p>©0trava - web developer</p>
+            <p>©RSSchool and ©Yem Digital - design 2021</p>
+          </div>
+
+        </div>
+
 
 
 

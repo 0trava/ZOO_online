@@ -1,11 +1,11 @@
 .body {
     display: flex;
+    flex-direction: column;
     justify-content: center;
-
     background-color: #333;
     padding-top: 100px;
     padding-bottom: 100px;
-    justify-content: space-around;
+
 }
 
 .logo {
@@ -36,14 +36,36 @@
 }
 
 /* BLOCK */
+
+.blocks {
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+}
 .block_first {
     display: flex;
+    
 
 }
 
 .block_second {
     display: flex;
     gap: 116px;
+
+}
+
+.block_therd {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.lyne {
+    background-color: #FEFEFE;
+    width: 80vw;
+    height: 0.5px;
 
 }
 
@@ -138,4 +160,18 @@
     box-shadow: 1px 1px 200px #F2F2F2;
     background: var(--base_gradient, linear-gradient(107deg, #45e4bc -14.32%, #30d8e4 100.68%));
 
+  }
+
+
+  /* last description */
+
+  .description {
+    margin-top: 28px;
+    color: var(--Gray-4, #BDBDBD);
+    font-family: Roboto;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    width: 80vw;
   }
