@@ -9,6 +9,7 @@ import {FaInstagram} from 'react-icons/fa';
 import {FaTwitter} from 'react-icons/fa';
 import {FaYoutube} from 'react-icons/fa';
 import {FaFacebookSquare} from 'react-icons/fa';
+import FormFooter from 'components/elements/Form/FormFooter/FormFooter';
 
 const Footer = () => {
   return (
@@ -22,7 +23,10 @@ const Footer = () => {
           <img className={style.logo} src={logo} alt="logo" />
         </div>
 
-        <h3 className={style.title}>Contact us</h3>
+        
+        <FormFooter/>
+        
+
       </div>
 
 

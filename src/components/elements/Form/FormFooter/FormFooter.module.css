@@ -1,0 +1,52 @@
+.body {
+    display: flex;
+    flex-direction: column;
+
+}
+
+/* Title */
+.title {
+    color: var(--base, #FEFEFE);
+
+    font-family: Roboto;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+    margin-bottom: 35px;
+}
+
+/* FORMA */
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+
+
+/* Button */
+.button {
+    display: flex;
+    width: 108px;
+    justify-content: center;
+    align-items: center;
+    color: #FEFEFE;
+    gap: 24px;
+    background-color: transparent;
+    border-color: transparent;
+    transition: all 0.2s cubic-bezier(0.01, 0.59, 1, 0.59);
+
+    color: var(--base, #FEFEFE);
+    font-family: Roboto;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.button:hover, .button:focus {
+    font-weight: 800;
+    box-shadow: 1px 1px 200px #fefefe3f;
+    /* background-color: #fefefe11; */
+}
