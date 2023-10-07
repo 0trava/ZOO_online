@@ -82,8 +82,8 @@ const Footer = () => {
         <div className={style.block_therd}>
           <div className={style.lyne}></div>
           <div className={style.description}>
-            <p>©0trava - web developer</p>
-            <p>©RSSchool and ©Yem Digital - design 2021</p>
+            <a href="https://github.com/0trava">©0trava - web developer</a>
+            <a href="https://www.figma.com/file/TWxr9bM8NSKWtzEySrG4yF/zooApp-(Copy)?type=design&node-id=5193%3A2025&mode=dev">©RSSchool and ©Yem Digital - design 2021</a>
           </div>
 
         </div>
