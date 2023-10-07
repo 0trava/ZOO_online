@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/ZOO_online/static/css/main.4f64d59b.css",
-    "main.js": "/ZOO_online/static/js/main.5ea4466f.js",
+    "main.js": "/ZOO_online/static/js/main.197d59ca.js",
     "static/media/hero_desk@2x.jpg": "/ZOO_online/static/media/hero_desk@2x.65337ff96ce5179ce302.jpg",
     "static/media/Map.svg": "/ZOO_online/static/media/Map.6218d5b05f73a08c9cfd73c76102b028.svg",
     "static/media/hero_desk@1x.jpg": "/ZOO_online/static/media/hero_desk@1x.ac8e594cc0fd663fbf0a.jpg",
@@ -14,10 +14,10 @@
     "static/media/cards.svg": "/ZOO_online/static/media/cards.5450356e15c486a0596bd301448d21ac.svg",
     "index.html": "/ZOO_online/index.html",
     "main.4f64d59b.css.map": "/ZOO_online/static/css/main.4f64d59b.css.map",
-    "main.5ea4466f.js.map": "/ZOO_online/static/js/main.5ea4466f.js.map"
+    "main.197d59ca.js.map": "/ZOO_online/static/js/main.197d59ca.js.map"
   },
   "entrypoints": [
     "static/css/main.4f64d59b.css",
-    "static/js/main.5ea4466f.js"
+    "static/js/main.197d59ca.js"
   ]
 }
