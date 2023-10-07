@@ -92,11 +92,6 @@ justify-content: flex-end;
     transition: all 0.2s cubic-bezier(0.01, 0.59, 1, 0.59);
 }
 
-.input:hover, .input:focus{
-    font-weight: 800;
-    box-shadow: 1px 1px 200px #fefefe3f;
-}
-
 .input_errors {
     position: absolute;
     bottom: 0;
@@ -111,6 +106,7 @@ justify-content: flex-end;
 /* Input message */
 .input_message {
     position: relative;
+    z-index: 21;
     width: 383px;
     height: 115px;
     border-radius: 3px;
@@ -121,10 +117,12 @@ justify-content: flex-end;
 .input_message p {
     position: absolute;
     background-color: #333333;
-    top: -10px;
+    z-index: 2;
+    top: -12px;
     left: 3px;
-    width: 145px;
     height: 12px;
+    padding: 5px;
+    pointer-events: none;
 
 
     color: var(--Gray-4, #BDBDBD);
@@ -150,5 +148,10 @@ justify-content: flex-end;
     font-weight: 400;
     line-height: normal;
 }
+
+.input_message:focus-visible {
+    border-color: transparent;
+}
+
 
   
