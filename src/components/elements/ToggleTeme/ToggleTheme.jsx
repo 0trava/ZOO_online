@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import style from './ToggleTheme.module.css';
 
-const ToggleTheme = () => {
+const ToggleTheme = ({setlogoTheme}) => {
   const [ theme, setTheme ] = useState("light");
   const them = localStorage.getItem('theme');
 
@@ -18,6 +18,7 @@ const ToggleTheme = () => {
     // LIGHT
     if (theme === "dark") {
       setTheme("light");
+      setlogoTheme("light");
       document.documentElement.setAttribute('data-theme', "light")
       localStorage.setItem('theme', 'light');
 
@@ -25,6 +26,7 @@ const ToggleTheme = () => {
     // DADK
     else {
       setTheme("dark");
+      setlogoTheme("dark");
       document.documentElement.setAttribute('data-theme', "dark")
       localStorage.setItem('theme', 'dark');
     }

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import style from './Header.module.css';
 
 // Images
@@ -9,6 +9,11 @@ import ToggleTheme from 'components/elements/ToggleTeme/ToggleTheme';
 
 const Header = () => {
   const them = localStorage.getItem('theme');
+  const [logoTheme, setlogoTheme] = useState(them);
+
+  useEffect(() => {
+
+  }, [logoTheme])
 
 
   const checkForActive = (active) => {
@@ -42,7 +47,7 @@ const Header = () => {
 
 
       {/* Toogle switches */}
-        <ToggleTheme/>
+        <ToggleTheme setlogoTheme={setlogoTheme}/>
     </div>
   )
 }

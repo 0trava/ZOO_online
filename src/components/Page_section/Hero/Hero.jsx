@@ -35,7 +35,7 @@ const Hero = () => {
 
         <button type='button' className={style.button}>
           <GoPlay className={style.button_span}/>
-          <span className ={style.btn_txt}>atch online</span>
+          <span className ={style.btn_txt}>Watch online</span>
         </button>
       </div>
 
