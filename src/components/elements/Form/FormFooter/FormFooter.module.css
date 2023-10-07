@@ -20,7 +20,6 @@
 .form {
     display: flex;
     flex-direction: column;
-    gap: 20px;
 }
 
 
@@ -50,3 +49,56 @@
     box-shadow: 1px 1px 200px #fefefe3f;
     /* background-color: #fefefe11; */
 }
+
+/* INPUT */
+.input_block {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 383px;
+    height: 40px;
+    position: relative;
+    margin-bottom: 10px;
+}
+
+.input {
+    width: 100%;
+
+    background-color: transparent;
+    border-color: transparent;
+    border-bottom: 1px solid #BDBDBD;
+
+    color: var(#E0E0E0);
+    font-family: Roboto;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.input::placeholder {
+    color: #BDBDBD;
+    font-family: Roboto;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.input_errors {
+    position: absolute;
+    bottom: 0;
+    color: #4AD7C9;
+    font-family: Roboto;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+/* Input message */
+.input_message {
+    
+}
+
+  

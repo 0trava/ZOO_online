@@ -34,19 +34,30 @@ const FormFooter = () => {
         {({ errors, touched }) => (
           <Form className={style.form}>
             {/* Name */}
-            <Field name="firstName" />
-            {errors.firstName && touched.firstName ? (
-              <div>{errors.firstName}</div>
-            ) : null}
+            <div className={style.input_block}>
+              <Field name="firstName" id="input" className={style.input} placeholder="Name"/>
+              {errors.firstName && touched.firstName ? (
+                <div className={style.input_errors}>{errors.firstName}</div>
+              ) : null}
+            </div>
+
+
+
             {/* Email */}
-            <Field name="email" type="email" />
-            {errors.email && touched.email ? <div>{errors.email}</div> : null}
+            <div className={style.input_block}>
+              <Field name="email" type="email"  className={style.input} placeholder="Email"/>
+              {errors.email && touched.email ? <div className={style.input_errors}>{errors.email}</div> : null}
+            </div>
 
             {/* Message */}
-            <Field name="message" type="textarea" />
-            {errors.message && touched.message ? (
-              <div>{errors.message}</div>
-            ) : null}
+            <div className={style.input_message}>
+              <p></p>
+              <Field name="message" type="textarea" />
+              {errors.message && touched.message ? (
+                <div>{errors.message}</div>
+              ) : null}  
+            </div>
+
 
             {/* button */}
             <button type="submit" className={style.button}>
