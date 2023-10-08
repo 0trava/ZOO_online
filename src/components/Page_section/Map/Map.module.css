@@ -74,3 +74,8 @@
     background: var(--base_gradient, linear-gradient(107deg, #45e4bc -14.32%, #30d8e4 100.68%));
 
   }
+
+
+  img {
+    width: 80vw;
+  }

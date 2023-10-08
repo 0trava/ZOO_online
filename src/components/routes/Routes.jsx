@@ -1,8 +1,12 @@
-import React from 'react'
+import React from 'react';
 
 const Routes = () => {
   return (
-    <div>Routes</div>
+    <>
+
+
+
+    </>
   )
 }
 
