@@ -6,8 +6,8 @@
     background-size: cover;
 
     display: flex;
-    padding-left: 150px;
-    padding-right: 150px;
+    padding-left: 40px;
+    padding-right: 40px;
     position: relative;
 
 }
@@ -20,17 +20,11 @@
     }
 }
 
-/* Social link */
 .social_block {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    /* align-items: start; */
-    margin-bottom: 111px;
-    width: 210px;
-
-    gap: 15px;
+    display: none;
 }
+
+
 
 .social_link {
     fill: #FEFEFE;
@@ -43,14 +37,16 @@
     scale: 1.2;
 }
 
-/* Content */
-.content {
+  /* Content */
+  .content {
     display: flex;
     flex-direction: column;
     margin-top: 20vh;
     gap: 37px;
-    width: 60vw;
+    width: 80vw;
 }
+
+
 .title {
     color: var(--base, #FEFEFE);
     font-family: Roboto;
@@ -98,6 +94,55 @@
 
   }
 
+
+  /* gallery */
+  .gallery {
+    bottom: 100px;
+    right: -44px;
+
+    background-color: none;
+    border: 1px solid red;
+    height: 238px;
+    width: 320px;
+  }
+
+
+/* FOR planshet */
+@media (min-width: 640px) {
+    .body {
+        display: flex;
+
+        padding-left: 80px;
+        padding-right: 80px;
+        position: relative;
+    
+    }
+
+        /* Social link */
+        .social_block {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            /* align-items: start; */
+            margin-bottom: 111px;
+            width: 210px;
+        
+            gap: 15px;
+        }
+}
+
+
+
+/* FOR desktop */
+@media (min-width: 1200px) {
+
+    .body {
+        padding-left: 150px;
+        padding-right: 150px;
+        position: relative;
+    
+    }
+
   /* gallery */
   .gallery {
     position: absolute;
@@ -109,3 +154,15 @@
     height: 420px;
     width: 1000px;
   }
+
+  /* Content */
+  .content {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20vh;
+    gap: 37px;
+    width: 60vw;
+}
+
+
+}

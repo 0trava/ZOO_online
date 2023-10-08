@@ -85,7 +85,8 @@ const Header = () => {
 
       {/*Burger menu  */}
       {burgerMenu ? 
-            <div className={style.bacround_modal} onClick={closeBurgerMenu}>
+            <div>
+            <div className={style.backround_modal} onClick={closeBurgerMenu}>
             <div className={style.burger_menu}>
               <AiOutlineClose className={style.burger_btn_close} onClick={closeBurgerMenu}/>
               <a href="/" className={checkForActive(2)}>About</a>
@@ -95,7 +96,8 @@ const Header = () => {
               <a href="/" className={checkForActive(1)}>Design</a>
             </div>
             </div>
-        : ""
+            </div>
+        : <></>
       }
 
     </div>

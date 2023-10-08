@@ -37,12 +37,14 @@ const Hero = () => {
           <GoPlay className={style.button_span}/>
           <span className ={style.btn_txt}>Watch online</span>
         </button>
+
+              {/* Gallery */}
+          <div className={style.gallery}>
+
+          </div>
       </div>
 
-      {/* Gallery */}
-      <div className={style.gallery}>
 
-      </div>
 
     </div>
   )

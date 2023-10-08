@@ -1,4 +1,6 @@
 /* Body */
+
+
 .body {
    display: flex;
    justify-content: space-around;
@@ -77,13 +79,15 @@
 }
 
 /* Burger menu */
-.bacround_modal {
+.backround_modal {
     position: absolute;
-    top: 0;
-    left: 0;
+    display: flex;
     width: 100vw;
-    height: 100vh;
-    background-color: rgba(0, 0, 0, 0.521);
+    height: 100%;
+    top: 0;
+    right: 0;
+    z-index: 1;
+    background-color: rgba(0, 0, 0, 0.801);
     cursor: pointer;
 }
 
@@ -94,10 +98,10 @@
     flex-direction: column;
     align-items: flex-start;
     width: 60vw;
-    height: 100vh;
+    height: 100%;
     top: 0;
     right: 0;
-    z-index: 1;
+    z-index: 2;
 
     padding: 60px;
     gap: 30px;
@@ -117,6 +121,7 @@
 
     width: 20px;
     height: 20px;
+    fill: var(--text-color);
 
     transition: all 0.2s cubic-bezier(0.01, 0.59, 1, 0.59);
 

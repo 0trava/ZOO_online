@@ -6,7 +6,7 @@ import img1 from '../../images/svg/problem-solving.svg';
 import img2 from '../../images/svg/achievement.svg';
 import img3 from '../../images/svg/love.svg';
 
-const Benefots = () => {
+const Benefits = () => {
   return (
     <div className={style.body}>
       <div className={style.benefit}>
@@ -40,4 +40,4 @@ const Benefots = () => {
   );
 };
 
-export default Benefots;
+export default Benefits;

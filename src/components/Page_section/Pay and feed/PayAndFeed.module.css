@@ -1,11 +1,11 @@
 .body {
     display: flex;
-    flex-direction: column;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
 
-    padding-top: 100px;
-    padding-bottom: 100px;
+    padding-top: 40px;
+    padding-bottom: 40px;
 
 
 
@@ -27,21 +27,14 @@
 }
 
 .text {
-    color: var(--text-color);
-    text-align: center;
-    margin-bottom: 92px;
-
-    /* txt_style */
-    font-family: Roboto;
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
+    display: none;
 }
 
 .list {
     display: flex;
+    flex-direction: column;
     align-items: center;
+
     gap: 63px;
     margin-bottom: 60px;
 }
@@ -79,8 +72,14 @@
 }
 
 .list_line {
-    max-width: 107px;
+    display: flex;
+    align-items: flex-end;
+    /* max-width: 40px; */
+    rotate: 90deg;
+    /* overflow: hidden; */
 }
+
+
 
 /* Button */
 .button {
@@ -117,3 +116,56 @@
     background: var(--base_gradient, linear-gradient(107deg, #45e4bc -14.32%, #30d8e4 100.68%));
 
   }
+
+
+/* FOR planshet */
+@media (min-width: 640px) {
+    .text {
+        display: flex;
+        color: var(--text-color);
+        text-align: center;
+        margin-bottom: 92px;
+        max-width: 600px;
+    
+        /* txt_style */
+        font-family: Roboto;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+}
+
+
+
+/* FOR desktop */
+@media (min-width: 1200px) {
+
+    .body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    
+        padding-top: 100px;
+        padding-bottom: 100px;
+    
+    
+    
+        background-color: var(--body-second-color);
+        
+    }
+
+    .list {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 63px;
+        margin-bottom: 60px;
+    }
+
+    .list_line {
+        max-width: 107px;
+        rotate: 0deg;
+    }
+}
