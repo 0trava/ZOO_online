@@ -2,8 +2,9 @@ import React, { useEffect, useState } from 'react';
 import style from './ToggleTheme.module.css';
 
 const ToggleTheme = ({setlogoTheme}) => {
-  const [ theme, setTheme ] = useState("light");
   const them = localStorage.getItem('theme');
+  const [ theme, setTheme ] = useState(them);
+
 
   useEffect (() => {
      setTheme(them);
@@ -12,7 +13,7 @@ const ToggleTheme = ({setlogoTheme}) => {
   }, [])
  
 
-
+// CLICK ToggleTheme
   function handleClick() {
 
     // LIGHT
@@ -34,9 +35,13 @@ const ToggleTheme = ({setlogoTheme}) => {
   }
 
 
+
   return (
         <div className={style.checkbox_apple} >
+          {them === "light" ? 
           <input className={style.yep} id="check-apple" type="checkbox" onClick={handleClick}/>
+        : <input className={style.yep} id="check-apple" type="checkbox" onClick={handleClick} checked/>}
+          
           <label htmlFor="check-apple"></label>
         </div>
   )
