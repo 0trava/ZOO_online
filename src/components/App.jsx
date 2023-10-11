@@ -22,7 +22,7 @@ export const App = () => {
       <PayAndFeed/>
       <Testimonials/>
       <Map/>
-      {/* <Footer/> */}
+      <Footer/>
     </div>
   );
 };
