@@ -39,20 +39,22 @@
 
 .blocks {
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
     width: 80vw;
+    align-items: flex-start
 
 }
 
 
 .block_first {
     display: flex;
-    
+
 
 }
 
 .block_second {
     display: flex;
+    flex-direction: column;
     gap: 116px;
 
 }
@@ -195,6 +197,24 @@
 
   /* FOR planshet */
 @media (min-width: 640px) {
+    .blocks {
+        display: flex;
+        justify-content: space-between;
+        width: 80vw;
+        flex-direction: row
+    
+    }
+
+    .block_second {
+        display: flex;
+        gap: 116px;
+        flex-direction: row
+    
+    }
+    
+
+
+
 
 }
 
