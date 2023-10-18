@@ -14,15 +14,39 @@ const Slider = ({ images }) => {
 
   return (
     <div className={style.carousel}>
+
+      <div className={style.slider_box}>
+      {/* slide -1 */}
+      <div className={style.slide}>
+        <img src={images[currentIndex - 1]} alt={`Slide ${currentIndex + 1}`} />
+      </div>
+      {/* slide General */}
+      <div className={style.slide_general}>
+        <img src={images[currentIndex]} alt={`Slide ${currentIndex + 1}`} />
+      </div>
+      {/* slide +1 */}
+      <div className={style.slide}>
+        <img src={images[currentIndex + 1]} alt={`Slide ${currentIndex + 1}`} />
+      </div>
+      {/* slide +2 */}
+      <div className={style.slide}>
+        <img src={images[currentIndex + 2]} alt={`Slide ${currentIndex + 1}`} />
+      </div>
+      {/* slide +3 */}
+      <div className={style.slide}>
+        <img src={images[currentIndex + 3]} alt={`Slide ${currentIndex + 1}`} />
+      </div>
+      </div>
+
+      
+      <div>
       <button className={style.prev} onClick={prevSlide}>
         Previous
       </button>
-      <div className={style.slide}>
-        <img src={images[currentIndex]} alt={`Slide ${currentIndex + 1}`} />
-      </div>
       <button className={style.next} onClick={nextSlide}>
         Next
       </button>
+      </div>
     </div>
   );
 }

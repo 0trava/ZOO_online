@@ -12,11 +12,15 @@ import Slider from 'components/elements/Slider/Slider';
 
 const Hero = () => {
 
-  
+
   const images = [
-    'image1.jpg',
-    'image2.jpg',
-    'image3.jpg',
+    'https://static.fotogora.ru/fotogora/wysiwyg/wp-content/uploads/2013/11/%C2%A9David-BenardAweso.jpg',
+    'https://static.fotogora.ru/fotogora/wysiwyg/wp-content/uploads/2013/11/%C2%A9Thorsten-Scheel.jpg',
+    'https://static.fotogora.ru/fotogora/wysiwyg/wp-content/uploads/2013/11/%C2%A9Gary-Brookshaw.jpg',
+    'https://static.fotogora.ru/fotogora/wysiwyg/wp-content/uploads/2013/11/%C2%A9Robert-Cinega.jpg',
+    'https://static.fotogora.ru/fotogora/wysiwyg/wp-content/uploads/2013/11/%C2%A9Scott-SpaethAwesom.jpg',
+    'https://static.fotogora.ru/fotogora/wysiwyg/wp-content/uploads/2013/11/%C2%A9sergei-gladyshev-2.jpg',
+    'https://static.fotogora.ru/fotogora/wysiwyg/wp-content/uploads/2013/11/%C2%A9sergei-gladyshev.jpg'
     // Add more image URLs here
   ];
 
