@@ -7,9 +7,23 @@ import {FaInstagram} from 'react-icons/fa';
 import {FaTwitter} from 'react-icons/fa';
 import {FaYoutube} from 'react-icons/fa';
 import {FaFacebookSquare} from 'react-icons/fa';
+import Slider from 'components/elements/Slider/Slider';
 
 
 const Hero = () => {
+
+  
+  const images = [
+    'image1.jpg',
+    'image2.jpg',
+    'image3.jpg',
+    // Add more image URLs here
+  ];
+
+
+
+
+
   return (
     <div className={style.body}>
       {/* Social link */}
@@ -40,6 +54,7 @@ const Hero = () => {
 
               {/* Gallery */}
           <div className={style.gallery}>
+            <Slider images={images} />
 
           </div>
       </div>
