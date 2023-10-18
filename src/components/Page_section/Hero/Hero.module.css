@@ -50,7 +50,7 @@
 .title {
     color: var(--base, #FEFEFE);
     font-family: Roboto;
-    font-size: 6vw;
+    font-size: 5vw;
     font-style: normal;
     font-weight: 900;
     line-height: normal;
@@ -146,13 +146,13 @@
   /* gallery */
   .gallery {
     position: absolute;
-    bottom: 100px;
+    bottom: 50px;
     right: -44px;
 
     background-color: none;
     border: 1px solid red;
-    height: 420px;
-    width: 1000px;
+    height: 470px;
+    width: 1083px;
   }
 
   /* Content */

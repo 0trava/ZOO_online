@@ -39,7 +39,7 @@ const Slider = ({ images }) => {
       </div>
 
       
-      <div>
+      <div className={style.btn_box}>
       <button className={style.prev} onClick={prevSlide}>
         Previous
       </button>
