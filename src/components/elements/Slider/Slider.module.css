@@ -63,7 +63,33 @@
 
   .btn_box {
     position: relative;
-    
+    flex-direction: column;
+    margin-top: 20px;
+    gap: 11px;
+    display: flex;
+    width: 245px;
+    height: 49px;
+    justify-content: center;
+    align-items: center;
+
+  }
+
+  .btn_box p {
+    color: var(--base, #FEFEFE);
+    font-family: Roboto;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+  }
+
+  .btn_box > p span {
+    color: var(--Gray-4, #BDBDBD);
+    font-family: Roboto;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
   }
   
   .prev,

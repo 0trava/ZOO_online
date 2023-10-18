@@ -40,12 +40,23 @@ const Slider = ({ images }) => {
 
       
       <div className={style.btn_box}>
-      <button className={style.prev} onClick={prevSlide}>
+      <p>{currentIndex+1}/<span>{images.length+1}</span></p>
+
+      <div className={style.scroll}>
+        <div>
+        <button className={style.prev} onClick={prevSlide}>
         Previous
       </button>
       <button className={style.next} onClick={nextSlide}>
         Next
       </button>
+        </div>
+        <svg xmlns="http://www.w3.org/2000/svg" width="245" height="10" viewBox="0 0 245 10" fill="none">
+        <rect y="3" width="245" height="5" fill="#BDBDBD" fill-opacity="0.57"/>
+        {/* <rect x="30" width="30" height="10" fill="#FEFEFE"/> */}
+        </svg>
+      </div>
+
       </div>
     </div>
   );
