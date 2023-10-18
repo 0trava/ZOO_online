@@ -16,6 +16,7 @@ const Slider = ({ images }) => {
     <div className={style.carousel}>
 
       <div className={style.slider_box}>
+        <div className={style.point}></div>
       {/* slide -1 */}
       <div className={style.slide}>
         <img src={images[currentIndex - 1]} alt={`Slide ${currentIndex + 1}`} />
@@ -53,7 +54,7 @@ const Slider = ({ images }) => {
         </div>
         <svg xmlns="http://www.w3.org/2000/svg" width="245" height="10" viewBox="0 0 245 10" fill="none">
         <rect y="3" width="245" height="5" fill="#BDBDBD" fill-opacity="0.57"/>
-        {/* <rect x="30" width="30" height="10" fill="#FEFEFE"/> */}
+        <rect x={currentIndex*30} width={images.length * 4} height="10" fill="#FEFEFE"/>
         </svg>
       </div>
 
