@@ -19,11 +19,11 @@ const Slider = ({ images }) => {
         <div className={style.point}></div>
       {/* slide -1 */}
       <div className={style.slide}>
-        <img src={images[currentIndex - 1]} alt={`Slide ${currentIndex + 1}`} />
+        <img src={images[currentIndex - 1]} alt={`Slide ${currentIndex - 1}`} />
       </div>
       {/* slide General */}
       <div className={style.slide_general}>
-        <img src={images[currentIndex]} alt={`Slide ${currentIndex + 1}`} />
+        <img src={images[currentIndex]} alt={`Slide ${currentIndex}`} />
       </div>
       {/* slide +1 */}
       <div className={style.slide}>
@@ -31,15 +31,15 @@ const Slider = ({ images }) => {
       </div>
       {/* slide +2 */}
       <div className={style.slide}>
-        <img src={images[currentIndex + 2]} alt={`Slide ${currentIndex + 1}`} />
+        <img src={images[currentIndex + 2]} alt={`Slide ${currentIndex + 2}`} />
       </div>
       {/* slide +3 */}
       <div className={style.slide}>
-        <img src={images[currentIndex + 3]} alt={`Slide ${currentIndex + 1}`} />
+        <img src={images[currentIndex + 3]} alt={`Slide ${currentIndex + 3}`} />
       </div>
       </div>
 
-      
+      {/* BUTTONS */}
       <div className={style.btn_box}>
       <p>{currentIndex+1}/<span>{images.length+1}</span></p>
 
