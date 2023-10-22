@@ -12,6 +12,18 @@ const Slider = ({ images }) => {
     setCurrentIndex((currentIndex - 1 + images.length) % images.length);
   };
 
+  const checkslide = (index) => {
+    if (images[currentIndex - index]) {
+      return images[currentIndex - index]
+    } else {
+      if (index > 0) {
+        return images[images.length - index];
+      } else {
+        return images[0 - index];
+      }
+    }
+  }
+
   return (
     <div className={style.carousel}>
 
@@ -19,23 +31,23 @@ const Slider = ({ images }) => {
         <div className={style.point}></div>
       {/* slide -1 */}
       <div className={style.slide}>
-        <img src={images[currentIndex - 1]} alt={`Slide ${currentIndex - 1}`} />
+        <img src={checkslide(1)} alt={`Slide ${currentIndex - 1}`} />
       </div>
       {/* slide General */}
       <div className={style.slide_general}>
-        <img src={images[currentIndex]} alt={`Slide ${currentIndex}`} />
+        <img src={checkslide(0)} alt={`Slide ${currentIndex}`} />
       </div>
       {/* slide +1 */}
       <div className={style.slide}>
-        <img src={images[currentIndex + 1]} alt={`Slide ${currentIndex + 1}`} />
+        <img src={checkslide(-1)} alt={`Slide ${currentIndex + 1}`} />
       </div>
       {/* slide +2 */}
       <div className={style.slide}>
-        <img src={images[currentIndex + 2]} alt={`Slide ${currentIndex + 2}`} />
+        <img src={checkslide(-2)} alt={`Slide ${currentIndex + 2}`} />
       </div>
       {/* slide +3 */}
       <div className={style.slide}>
-        <img src={images[currentIndex + 3]} alt={`Slide ${currentIndex + 3}`} />
+        <img src={checkslide(-3)} alt={`Slide ${currentIndex + 3}`} />
       </div>
       </div>
 
