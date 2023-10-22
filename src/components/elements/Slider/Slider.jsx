@@ -3,6 +3,7 @@ import style from './Slider.module.css';
 
 // import icons
 import {GoPlay} from 'react-icons/go';
+import {BiDollarCircle} from 'react-icons/bi';
 
 const Slider = ({ images }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -45,7 +46,7 @@ const Slider = ({ images }) => {
           Watch online
         </button>
         <button className={style.slide_general_btn_donate} type='button'>
-          <span><GoPlay/></span>
+          <span><BiDollarCircle/></span>
           Donate
         </button>
       </div>
