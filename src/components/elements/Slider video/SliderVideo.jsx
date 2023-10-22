@@ -3,6 +3,7 @@ import style from './SliderVideo.module.css';
 
 const SliderVideo = ({ video }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
+  const theme = localStorage.getItem('theme');
 
   const nextSlide = () => {
     setCurrentIndex((currentIndex + 1) % video.length);
@@ -54,27 +55,17 @@ const SliderVideo = ({ video }) => {
               Next
             </button>
           </div>
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="245"
-            height="10"
-            viewBox="0 0 245 10"
-            fill="none"
-          >
-            <rect
-              y="3"
-              width="245"
-              height="5"
-              fill="#BDBDBD"
-              fill-opacity="0.57"
-            />
-            <rect
-              x={currentIndex * (285 / video.length)}
-              width='30'
-              height="10"
-              fill="#FEFEFE"
-            />
-          </svg>
+          {(theme === "dark")?
+            <svg xmlns="http://www.w3.org/2000/svg" width="245" height="10" viewBox="0 0 245 10" fill="none">
+            <rect y="3" width="245" height="5" fill="#BDBDBD" fill-opacity="0.57"/>
+            <rect x={currentIndex * 30} width={245/video.length} height="10" fill="#FEFEFE"/>
+            </svg>
+            :
+            <svg xmlns="http://www.w3.org/2000/svg" width="245" height="10" viewBox="0 0 245 10" fill="none">
+            <rect y="3" width="245" height="5" fill="#BDBDBD" fill-opacity="0.57"/>
+            <rect x={(245/video.length) * currentIndex} width={245/video.length} height="10"  fill="#333333"/>
+            </svg>
+            }
         </div>
       </div>
     </div>

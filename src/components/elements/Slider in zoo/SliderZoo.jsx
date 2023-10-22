@@ -7,6 +7,7 @@ import {BiDollarCircle} from 'react-icons/bi';
 
 const SliderZoo = ({ images }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
+  const theme = localStorage.getItem('theme');
 
   const nextSlide = () => {
     setCurrentIndex((currentIndex + 1) % images.length);
@@ -24,6 +25,7 @@ const SliderZoo = ({ images }) => {
       return images[0 + index];
     }
   }
+
 
   return (
     <div className={style.carousel}>
@@ -70,10 +72,17 @@ const SliderZoo = ({ images }) => {
         Next
       </button>
         </div>
+        {(theme === "dark")?
         <svg xmlns="http://www.w3.org/2000/svg" width="245" height="10" viewBox="0 0 245 10" fill="none">
         <rect y="3" width="245" height="5" fill="#BDBDBD" fill-opacity="0.57"/>
-        <rect x={currentIndex*30} width={images.length * 4} height="10" fill="#FEFEFE"/>
+        <rect x={currentIndex * 30} width={images.length * 4}  height="10" fill="#FEFEFE"/>
         </svg>
+        :
+        <svg xmlns="http://www.w3.org/2000/svg" width="245" height="10" viewBox="0 0 245 10" fill="none">
+        <rect y="3" width="245" height="5" fill="#BDBDBD" fill-opacity="0.57"/>
+        <rect x={currentIndex * 30} width={images.length * 4} height="10"  fill="#333333"/>
+        </svg>
+        }
       </div>
 
       </div>
