@@ -66,23 +66,7 @@
     overflow: hidden;
   }
 
-  .slide_general {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 5px;
-    background: linear-gradient(357deg, #000 -56.45%, rgba(0, 0, 0, 0.00) 65.03%), lightgray 50% / cover no-repeat;
-    width: 245px;
-    height: 352px;
-    box-shadow: 5px 4px 50px 0px rgba(152, 157, 198, 0.25);
-    overflow: hidden;
-  }
 
-  .slide_general img {
-    height: 100%;
-    
-
-  }
   
  .slide img {
 
@@ -137,4 +121,110 @@
   
   .next {
     right: 0;
+  }
+
+
+  /* GENERAL SLIDE */
+  .slide_general {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    background: linear-gradient(357deg, #000 -56.45%, rgba(0, 0, 0, 0.00) 65.03%), lightgray 50% / cover no-repeat;
+    width: 245px;
+    height: 352px;
+    box-shadow: 5px 4px 50px 0px rgba(152, 157, 198, 0.25);
+    overflow: hidden;
+  }
+
+  .slide_general img {
+    height: 100%;
+    
+
+  }
+
+  .slide_general_text {
+    position: absolute;
+    left: 23px;
+    bottom: 72px;
+    width: 194px;
+    color: #FFF;
+    font-family: Roboto;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+
+  .slide_general_btn_watch {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    gap: 2px;
+    cursor: pointer;
+
+    left: 23px;
+    bottom: 34px;
+    padding: 0;
+    text-align: center;
+    font-family: Roboto;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    text-transform: uppercase;
+
+    background: var(--base_gradient, linear-gradient(107deg, #4BD8B5 -14.32%, #49D6DF 100.68%));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    border: none;
+    transition: all 0.2s cubic-bezier(0.01, 0.59, 1, 0.59);
+  }
+
+  .slide_general_btn_watch span > svg {
+    width: 24px;
+    height: 24px;
+    fill: #4BD8B5 ;
+  }
+
+  .slide_general_btn_watch:hover, .slide_general_btn_watch:focus {
+    scale: 1.1;
+  }
+
+  /* btn donate */
+.slide_general_btn_donate {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    gap: 2px;
+    cursor: pointer;
+
+    right: 25px;
+    bottom: 34px;
+    padding: 0;
+
+    color: #FFF;
+    border: none;
+    transition: all 0.2s cubic-bezier(0.01, 0.59, 1, 0.59);
+    background: transparent;
+
+    text-align: center;
+    font-family: Roboto;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-transform: uppercase;
+}
+
+.slide_general_btn_donate span > svg {
+    width: 24px;
+    height: 24px;
+    fill: #FFF ;
+  }
+
+  .slide_general_btn_donate:hover, .slide_general_btn_donate:focus {
+    scale: 1.1;
   }

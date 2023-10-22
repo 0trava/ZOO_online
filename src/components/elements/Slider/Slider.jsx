@@ -1,6 +1,9 @@
 import React, { useState } from 'react';
 import style from './Slider.module.css';
 
+// import icons
+import {GoPlay} from 'react-icons/go';
+
 const Slider = ({ images }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
 
@@ -36,6 +39,15 @@ const Slider = ({ images }) => {
       {/* slide General */}
       <div className={style.slide_general}>
         <img src={checkslide(0)} alt={`Slide ${currentIndex}`} />
+        <p className={style.slide_general_text}>Panda’s name is Bei Bei. He is 2 years old. Bei Bei is from China. He loves bamboos.</p>
+        <button className={style.slide_general_btn_watch} type='button'>
+          <span><GoPlay/></span>
+          Watch online
+        </button>
+        <button className={style.slide_general_btn_donate} type='button'>
+          <span><GoPlay/></span>
+          Donate
+        </button>
       </div>
       {/* slide +1 */}
       <div className={style.slide}>
@@ -53,7 +65,7 @@ const Slider = ({ images }) => {
 
       {/* BUTTONS */}
       <div className={style.btn_box}>
-      <p>{currentIndex+1}/<span>{images.length+1}</span></p>
+      <p>0{currentIndex+1}/<span>0{images.length+1}</span></p>
 
       <div className={style.scroll}>
         <div>
