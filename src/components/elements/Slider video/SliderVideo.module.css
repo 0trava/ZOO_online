@@ -12,7 +12,7 @@
     width: 790px;
     height: 323px;
     border-radius: 5px;
-    background: lightgray 50% / cover no-repeat;
+    background: var(--body-color) 50% / cover no-repeat;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -47,7 +47,7 @@
   }
 
   .btn_box p {
-    color: var(--base, #FEFEFE);
+    color: var(--text-color-second);
     font-family: Roboto;
     font-size: 24px;
     font-style: normal;
