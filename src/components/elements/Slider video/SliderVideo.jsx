@@ -69,8 +69,8 @@ const SliderVideo = ({ video }) => {
               fill-opacity="0.57"
             />
             <rect
-              x={currentIndex * 30}
-              width={video.length * 4}
+              x={currentIndex * (285 / video.length)}
+              width='30'
               height="10"
               fill="#FEFEFE"
             />

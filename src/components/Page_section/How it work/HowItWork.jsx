@@ -8,7 +8,9 @@ import SliderVideo from 'components/elements/Slider video/SliderVideo';
 const HowItWork = () => {
   const video = [
     'fygyNQAzRFM?si=DuYDkhTCvO22CXTd',
-    '-K_8eKtU5rI?si=bOvc5i231iGWiHJy'
+    '-K_8eKtU5rI?si=bOvc5i231iGWiHJy',
+    'fygyNQAzRFM?si=DuYDkhTCvO22CXTd',
+    'aw8-DY5DCwc?si=hxLCLk1MdamnWR3a'
   ]
 
 

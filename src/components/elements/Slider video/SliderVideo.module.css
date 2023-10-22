@@ -1,3 +1,11 @@
+.carousel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
 /* VIDEO */
 
 .slider_box {
@@ -19,7 +27,7 @@
 
 /* BUTTONS */
 .btn_box {
-    position: relative;
+    /* position: relative; */
     flex-direction: column;
     margin-top: 20px;
     gap: 11px;
@@ -29,6 +37,13 @@
     justify-content: center;
     align-items: center;
 
+  }
+
+  .scroll {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
   .btn_box p {
@@ -52,17 +67,18 @@
   .prev,
   .next {
     position: absolute;
-    /* opacity: 0; */
-    bottom: -10%;
+    width: 100px;
+    opacity: 0;
+    bottom: -30%;
     padding: 10px;
     cursor: pointer;
     background-color: red;
   }
   
   .prev {
-    left: 0;
+    left: 32%;
   }
   
   .next {
-    right: 0;
+    right: 32%;
   }
