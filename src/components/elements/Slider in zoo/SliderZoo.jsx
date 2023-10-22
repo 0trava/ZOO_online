@@ -22,7 +22,7 @@ const SliderZoo = ({ images }) => {
     if (images[currentIndex + index]) {
       return images[currentIndex + index];
     } else {
-      return images[0 + index];
+      return images[-1 + index];
     }
   }
 
