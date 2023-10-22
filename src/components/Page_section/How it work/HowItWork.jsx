@@ -3,8 +3,18 @@ import style from './HowItWork.module.css'
 
 // import icons
 import {GoPlay} from 'react-icons/go';
+import SliderVideo from 'components/elements/Slider video/SliderVideo';
 
 const HowItWork = () => {
+  const video = [
+    'fygyNQAzRFM?si=DuYDkhTCvO22CXTd',
+    '-K_8eKtU5rI?si=bOvc5i231iGWiHJy'
+  ]
+
+
+
+
+
   return (
     <div className={style.body}>
       <div>
@@ -22,7 +32,9 @@ const HowItWork = () => {
         habitat.
       </p>
       </div>
-      {/* Slider */}
+      {/* VIDEO SLIDER */}
+      <SliderVideo video={video} />
+
       <div>
 
       </div>

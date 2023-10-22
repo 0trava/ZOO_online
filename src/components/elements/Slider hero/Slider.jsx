@@ -66,7 +66,7 @@ const Slider = ({ images }) => {
 
       {/* BUTTONS */}
       <div className={style.btn_box}>
-      <p>0{currentIndex+1}/<span>0{images.length+1}</span></p>
+      <p>0{currentIndex+1}/<span>0{images.length}</span></p>
 
       <div className={style.scroll}>
         <div>

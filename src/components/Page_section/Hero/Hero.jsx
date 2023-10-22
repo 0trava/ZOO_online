@@ -7,7 +7,7 @@ import {FaInstagram} from 'react-icons/fa';
 import {FaTwitter} from 'react-icons/fa';
 import {FaYoutube} from 'react-icons/fa';
 import {FaFacebookSquare} from 'react-icons/fa';
-import Slider from 'components/elements/Slider/Slider';
+import Slider from 'components/elements/Slider hero/Slider';
 
 
 const Hero = () => {

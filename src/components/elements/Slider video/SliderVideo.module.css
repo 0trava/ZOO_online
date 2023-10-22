@@ -1,0 +1,68 @@
+/* VIDEO */
+
+.slider_box {
+    width: 790px;
+    height: 323px;
+    border-radius: 5px;
+    background: lightgray 50% / cover no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.video {
+    width: 790px;
+    height: 323px;
+}
+
+
+
+/* BUTTONS */
+.btn_box {
+    position: relative;
+    flex-direction: column;
+    margin-top: 20px;
+    gap: 11px;
+    display: flex;
+    width: 245px;
+    height: 49px;
+    justify-content: center;
+    align-items: center;
+
+  }
+
+  .btn_box p {
+    color: var(--base, #FEFEFE);
+    font-family: Roboto;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+  }
+
+  .btn_box > p span {
+    color: var(--Gray-4, #BDBDBD);
+    font-family: Roboto;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+  }
+  
+  .prev,
+  .next {
+    position: absolute;
+    /* opacity: 0; */
+    bottom: -10%;
+    padding: 10px;
+    cursor: pointer;
+    background-color: red;
+  }
+  
+  .prev {
+    left: 0;
+  }
+  
+  .next {
+    right: 0;
+  }
