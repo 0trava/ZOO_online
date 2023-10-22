@@ -58,7 +58,7 @@ const SliderVideo = ({ video }) => {
           {(theme === "dark")?
             <svg xmlns="http://www.w3.org/2000/svg" width="245" height="10" viewBox="0 0 245 10" fill="none">
             <rect y="3" width="245" height="5" fill="#BDBDBD" fill-opacity="0.57"/>
-            <rect x={currentIndex * 30} width={245/video.length} height="10" fill="#FEFEFE"/>
+            <rect x={(245/video.length) * currentIndex} width={245/video.length} height="10" fill="#FEFEFE"/>
             </svg>
             :
             <svg xmlns="http://www.w3.org/2000/svg" width="245" height="10" viewBox="0 0 245 10" fill="none">
