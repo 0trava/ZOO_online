@@ -26,9 +26,7 @@
   }
 
   .slider_box::after {
-    position: absolute;
-    top: 40.5%;
-    left: 0;
+
 
     z-index: -1;
     content: "";
@@ -38,6 +36,11 @@
     /* background-color:  white; */
     padding: 4px;
     background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 13 13" fill="none"><circle cx="6.5" cy="6.5" r="6" stroke="%23FEFEFE"/></svg>');
+  
+    position: absolute;
+    top: 40.5%;
+    left: 0;
+  
   }
 
   .point {
