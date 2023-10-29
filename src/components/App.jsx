@@ -16,13 +16,13 @@ export const App = () => {
     <div className={style.body}>
       <Header/>
       <Hero/>
-      {/* <HowItWork/>
+      <HowItWork/>
       <Benefits/>
       <PetsInZoo/>
       <PayAndFeed/>
       <Testimonials/>
       <Map/>
-      <Footer/> */}
+      <Footer/>
     </div>
   );
 };
