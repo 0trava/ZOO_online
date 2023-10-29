@@ -9,6 +9,7 @@
     padding-left: 40px;
     padding-right: 40px;
     position: relative;
+    overflow: hidden;
 
 }
 
@@ -98,12 +99,8 @@
   /* gallery */
   .gallery {
     bottom: 0px;
-    right: -44px;
-
     background-color: none;
-    border: 1px solid red;
-    height: 238px;
-    width: 320px;
+    width: 100vw;
   }
 
 
@@ -123,7 +120,6 @@
             display: flex;
             flex-direction: column;
             justify-content: flex-end;
-            /* align-items: start; */
             margin-bottom: 111px;
             width: 210px;
         
@@ -143,19 +139,6 @@
     
     }
 
-  /* gallery */
-  .gallery {
-    position: absolute;
-    bottom: 0px;
-    right: -44px;
-
-    background-color: none;
-    border: 1px solid red;
-    height: 470px;
-    width: 1083px;
-  }
-
-  /* Content */
   .content {
     display: flex;
     flex-direction: column;
@@ -163,6 +146,12 @@
     gap: 37px;
     width: 60vw;
 }
-
-
+  .gallery {
+    position: absolute;
+    bottom: 0px;
+    right: -44px;
+    background-color: none;
+    height: 470px;
+    width: 60vw;
+  }
 }
