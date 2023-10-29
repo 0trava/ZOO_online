@@ -1,5 +1,6 @@
 .body {
     display: flex;
+    position: relative;
     justify-content: center;
     flex-direction: column;
     align-items: center;
@@ -41,15 +42,28 @@
     display: flex;
     flex-direction: column;
     width: 80vw;
-    align-items: flex-start
+    align-items: flex-start;
+    
 
 }
 
 
 .block_first {
     display: flex;
+    flex-direction: column;
+}
 
-
+.link_block_first {
+    /* display: none; */
+    display: flex;
+    /* width: 404px; */
+    /* height: 21px; */
+    padding: 3px 30px 0px 0px;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 5px;
+    margin-bottom: 23px;
+    margin-top: 30px;
 }
 
 .block_second {
@@ -76,13 +90,7 @@
 
 /* Link Block */
 .link_block {
-    display: flex;
-    width: 404px;
-    height: 21px;
-    padding: 3px 24px 0px 0px;
-    align-items: flex-start;
-    gap: 73px;
-    margin-bottom: 74px;
+    display: none;
 }
 
 .link {
@@ -195,26 +203,16 @@
     font-weight: 600;
   }
 
+
+
+
   /* FOR planshet */
 @media (min-width: 640px) {
-    .blocks {
-        display: flex;
-        justify-content: space-between;
-        width: 80vw;
-        flex-direction: row
-    
+    .button {
+        position: absolute;
+        top: 96px;
+        right: 20px;
     }
-
-    .block_second {
-        display: flex;
-        gap: 116px;
-        flex-direction: row
-    
-    }
-    
-
-
-
 
 }
 
@@ -224,11 +222,40 @@
 @media (min-width: 1200px) {
     .body {
         display: flex;
-        flex-direction: column;
+        /* flex-direction: column; */
         justify-content: center;
         align-items: center;
         background-color: #333;
         padding-top: 100px;
         padding-bottom: 100px;
+    }
+
+    .link_block {
+        display: flex;
+        width: 404px;
+        height: 21px;
+        padding: 3px 24px 0px 0px;
+        align-items: flex-start;
+        gap: 73px;
+        margin-bottom: 74px;
+    }
+
+    .link_block_first {
+        display: none;
+    }
+
+    .button {
+        position: initial;
+
+    }
+
+    .blocks {
+        display: flex;
+        flex-direction: row;
+        width: 80vw;
+        align-items: flex-start;
+        justify-content: space-around;
+        
+    
     }
 }

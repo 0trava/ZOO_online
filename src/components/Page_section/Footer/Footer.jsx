@@ -22,6 +22,13 @@ const Footer = () => {
         <div className={style.block_first}>
           <img className={style.logo} src={logo} alt="logo" />
         </div>
+            {/* Link */}
+            <div className={style.link_block_first}>
+              <a href="/" className={style.link}>About</a>
+              <a href="/" className={style.link}>Zoos</a>
+              <a href="/" className={style.link}>Map</a>
+              <a href="/" className={style.link}>Design</a>
+            </div>
 
         
         <FormFooter/>
