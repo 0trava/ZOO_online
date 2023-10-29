@@ -42,7 +42,7 @@
   .content {
     display: flex;
     flex-direction: column;
-    margin-top: 20vh;
+    margin-top: 2vh;
     gap: 37px;
     width: 80vw;
 }
@@ -51,7 +51,7 @@
 .title {
     color: var(--base, #FEFEFE);
     font-family: Roboto;
-    font-size: 5vw;
+    font-size: 10vw;
     font-style: normal;
     font-weight: 900;
     line-height: normal;
@@ -124,6 +124,15 @@
             width: 210px;
         
             gap: 15px;
+        }
+
+        .content {
+            margin-top: 10vh;
+        }
+        
+        
+        .title {
+            font-size: 5vw;
         }
 }
 
