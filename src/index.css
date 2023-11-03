@@ -22,6 +22,7 @@ code {
   --text-color: #F2F2F2;
   --text-color-second: #FEFEFE;
   --body-second-color: #4F4F4F;
+  --reviews-color: #3C3C3C;
 
 
 }
@@ -32,7 +33,7 @@ code {
   --text-color: #333333;
   --text-color-second: #4F4F4F;
   --body-second-color: #F2F2F2;
-
+  --reviews-color: #FEFEFE;;
 
 }
 

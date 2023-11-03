@@ -25,8 +25,10 @@ const SliderTestimonials = ({ reviews }) => {
         <div className={style.point}></div>
       {/* slide General */}
       {reviews.map((slide, index) => (
-        <div key={slide.id} className="slide">
-          <img src={slide.avatar} alt={slide.title} />
+        <div key={slide.id} className={style.slide}>
+          <div className={style.avatar}>
+            <img src={slide.avatar} alt={slide.title}/>
+          </div>
           <h2>{slide.title}</h2>
           <p>{slide.text}</p>
         </div>
