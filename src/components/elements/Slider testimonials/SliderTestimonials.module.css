@@ -105,6 +105,7 @@
 
   .slide p {
     color: var(--text-color-second);
+    max-width: 440px;
 
     /* txt_style */
     font-family: Roboto;
