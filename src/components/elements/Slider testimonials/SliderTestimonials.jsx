@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import style from './SliderZoo.module.css';
+import style from './SliderTestimonials.module.css';
 
 // import icons
 import {GoPlay} from 'react-icons/go';
@@ -19,7 +19,7 @@ const SliderTestimonials = ({ reviews }) => {
 
   const checkslide = (index) => {
     if (reviews[currentIndex + index]) {
-      return reviews[currentIndex + index];
+      return reviews[currentIndex + index].images;
     } else {
       return reviews[-1 + index];
     }
@@ -33,34 +33,27 @@ const SliderTestimonials = ({ reviews }) => {
         <div className={style.point}></div>
       {/* slide General */}
       <div className={style.slide_general}>
-        <img src={checkslide(0)} alt={`Slide ${currentIndex}`} />
-        <p className={style.slide_general_text}>Panda’s name is Bei Bei. He is 2 years old. Bei Bei is from China. He loves bamboos.</p>
-        <button className={style.slide_general_btn_watch} type='button'>
-          <span><GoPlay/></span>
-          Watch online
-        </button>
-        <button className={style.slide_general_btn_donate} type='button'>
-          <span><BiDollarCircle/></span>
-          Donate
-        </button>
+        <img src={checkslide(1)} alt="avatar" />
+        <h3></h3>
+        <p></p>
       </div>
       {/* slide +1 */}
-      <div className={style.slide}>
+      {/* <div className={style.slide}>
         <img src={checkslide(1)} alt={`Slide ${currentIndex + 1}`} />
-      </div>
+      </div> */}
       {/* slide +2 */}
-      <div className={style.slide}>
+      {/* <div className={style.slide}>
         <img src={checkslide(2)} alt={`Slide ${currentIndex + 2}`} />
-      </div>
+      </div> */}
       {/* slide +3 */}
-      <div className={style.slide}>
+      {/* <div className={style.slide}>
         <img src={checkslide(3)} alt={`Slide ${currentIndex + 3}`} />
-      </div>
+      </div> */}
       </div>
 
       {/* BUTTONS */}
       <div className={style.btn_box}>
-      <p>0{currentIndex+1}/<span>0{images.length}</span></p>
+      <p>0{currentIndex+1}/<span>0{reviews.length}</span></p>
 
       <div className={style.scroll}>
         <div>
@@ -74,12 +67,12 @@ const SliderTestimonials = ({ reviews }) => {
         {(theme === "dark")?
         <svg xmlns="http://www.w3.org/2000/svg" width="245" height="10" viewBox="0 0 245 10" fill="none">
         <rect y="3" width="245" height="5" fill="#BDBDBD" fill-opacity="0.57"/>
-        <rect x={(245/images.length) * currentIndex} width={245/images.length}  height="10" fill="#FEFEFE"/>
+        <rect x={(245/reviews.length) * currentIndex} width={245/reviews.length}  height="10" fill="#FEFEFE"/>
         </svg>
         :
         <svg xmlns="http://www.w3.org/2000/svg" width="245" height="10" viewBox="0 0 245 10" fill="none">
         <rect y="3" width="245" height="5" fill="#BDBDBD" fill-opacity="0.57"/>
-        <rect x={(245/images.length) * currentIndex} width={245/images.length} height="10"  fill="#333333"/>
+        <rect x={(245/reviews.length) * currentIndex} width={245/reviews.length} height="10"  fill="#333333"/>
         </svg>
         }
       </div>
