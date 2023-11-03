@@ -2,8 +2,8 @@ import React, { useState } from 'react';
 import style from './SliderTestimonials.module.css';
 
 // import icons
-import {GoPlay} from 'react-icons/go';
-import {BiDollarCircle} from 'react-icons/bi';
+// import {GoPlay} from 'react-icons/go';
+// import {BiDollarCircle} from 'react-icons/bi';
 
 const SliderTestimonials = ({ reviews }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -17,14 +17,6 @@ const SliderTestimonials = ({ reviews }) => {
     setCurrentIndex((currentIndex - 1 + reviews.length) % reviews.length);
   };
 
-  const checkslide = (index) => {
-    if (reviews[currentIndex + index]) {
-      return reviews[currentIndex + index].images;
-    } else {
-      return reviews[-1 + index];
-    }
-  }
-
 
   return (
     <div className={style.carousel}>
@@ -32,23 +24,13 @@ const SliderTestimonials = ({ reviews }) => {
       <div className={style.slider_box}>
         <div className={style.point}></div>
       {/* slide General */}
-      <div className={style.slide_general}>
-        <img src={checkslide(1)} alt="avatar" />
-        <h3></h3>
-        <p></p>
-      </div>
-      {/* slide +1 */}
-      {/* <div className={style.slide}>
-        <img src={checkslide(1)} alt={`Slide ${currentIndex + 1}`} />
-      </div> */}
-      {/* slide +2 */}
-      {/* <div className={style.slide}>
-        <img src={checkslide(2)} alt={`Slide ${currentIndex + 2}`} />
-      </div> */}
-      {/* slide +3 */}
-      {/* <div className={style.slide}>
-        <img src={checkslide(3)} alt={`Slide ${currentIndex + 3}`} />
-      </div> */}
+      {reviews.map((slide, index) => (
+        <div key={slide.id} className="slide">
+          <img src={slide.avatar} alt={slide.title} />
+          <h2>{slide.title}</h2>
+          <p>{slide.text}</p>
+        </div>
+      )) }
       </div>
 
       {/* BUTTONS */}
