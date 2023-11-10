@@ -8,6 +8,7 @@
   }
 
   .slider_box {
+    position: relative;
     display: flex;
     justify-content: flex-end;
     align-items: center;
@@ -70,7 +71,22 @@
 
     /* 2 */
     box-shadow: 2px 4px 15px 0px rgba(6, 12, 70, 0.10);
+    /* animation: slideFromRight 1s ease-out; */
 
+  }
+
+  .slideAnimated {
+    animation: slideFromRight 1s ease-out;
+  }
+
+  /* Animation */
+  @keyframes slideFromRight {
+    from {
+      transform: translateX(100%);
+    }
+    to {
+      transform: translateX(0);
+    }
   }
 
  .avatar {

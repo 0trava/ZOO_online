@@ -8,14 +8,39 @@ import style from './SliderTestimonials.module.css';
 const SliderTestimonials = ({ reviews }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const theme = localStorage.getItem('theme');
+  const [isAnimating, setIsAnimating] = useState(false);
 
   const nextSlide = () => {
-    setCurrentIndex((currentIndex + 1) % reviews.length);
+    setIsAnimating(true);
+    if (currentIndex + 1 > reviews.length) {
+      setCurrentIndex(0);
+    } else {
+      setCurrentIndex((currentIndex + 1) % reviews.length);
+    }
+
   };
 
   const prevSlide = () => {
+    setIsAnimating(true);
     setCurrentIndex((currentIndex - 1 + reviews.length) % reviews.length);
   };
+
+
+  const handleAnimationEnd = () => {
+    setIsAnimating(false);
+  };
+
+  const checkslide = (index) => {
+    if (reviews[index]) {
+      return index;
+    } else {
+      if (index > reviews.length) {
+        return 0;
+      } else {
+        return 0;
+      }
+    }
+  }
 
 
   return (
@@ -23,16 +48,35 @@ const SliderTestimonials = ({ reviews }) => {
 
       <div className={style.slider_box}>
         <div className={style.point}></div>
-      {/* slide General */}
-      {reviews.map((slide, index) => (
-        <div key={slide.id} className={style.slide}>
+
+        {/* Buttons next / previos */}
+        <button className={style.prev} onClick={prevSlide}>
+          Previous
+        </button>
+        <button className={style.next} onClick={nextSlide}>
+          Next
+        </button>
+
+
+
+      {/* slide 1 */}
+      <div className={`${style.slide} ${isAnimating ? style.slideAnimated : ''}`} onAnimationEnd={handleAnimationEnd}>
           <div className={style.avatar}>
-            <img src={slide.avatar} alt={slide.title}/>
+            <img src={reviews[currentIndex].avatar} alt={reviews[currentIndex].title}/>
           </div>
-          <h2>{slide.title}</h2>
-          <p>{slide.text}</p>
+          <h2>{reviews[currentIndex].title}</h2>
+          <p>{reviews[currentIndex].text}</p>
         </div>
-      )) }
+
+
+      {/* slide 2 */}
+        <div  className={`${style.slide} ${isAnimating ? style.slideAnimated : ''}`} onAnimationEnd={handleAnimationEnd}>
+          <div className={style.avatar}>
+            <img src={reviews[checkslide(currentIndex + 1)].avatar} alt={reviews[checkslide(currentIndex + 1)].title}/>
+          </div>
+          <h2>{reviews[checkslide(currentIndex + 1)].title}</h2>
+          <p>{reviews[checkslide(currentIndex + 1)].text}</p>
+        </div>
       </div>
 
       {/* BUTTONS */}
