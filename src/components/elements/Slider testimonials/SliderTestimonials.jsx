@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 import style from './SliderTestimonials.module.css';
+import {MdArrowBackIosNew}  from 'react-icons/md';
+import {MdArrowForwardIos}  from 'react-icons/md';
 
 // import icons
 // import {GoPlay} from 'react-icons/go';
@@ -49,13 +51,10 @@ const SliderTestimonials = ({ reviews }) => {
       <div className={style.slider_box}>
         <div className={style.point}></div>
 
-        {/* Buttons next / previos */}
-        <button className={style.prev} onClick={prevSlide}>
-          Previous
-        </button>
-        <button className={style.next} onClick={nextSlide}>
-          Next
-        </button>
+        {/* Buttons next / previos arrow*/}
+        <MdArrowBackIosNew className={style.arrow_prev} onClick={prevSlide}/>
+        <MdArrowForwardIos className={style.arrow_next} onClick={nextSlide}/>
+
 
 
 
