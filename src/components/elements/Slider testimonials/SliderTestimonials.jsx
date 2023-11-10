@@ -49,7 +49,6 @@ const SliderTestimonials = ({ reviews }) => {
     <div className={style.carousel}>
 
       <div className={style.slider_box}>
-        <div className={style.point}></div>
 
         {/* Buttons next / previos arrow*/}
         <MdArrowBackIosNew className={style.arrow_prev} onClick={prevSlide}/>

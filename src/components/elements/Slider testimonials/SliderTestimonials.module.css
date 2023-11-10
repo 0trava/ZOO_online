@@ -28,6 +28,7 @@
     width: 30px;
     height: 30px;
     transition: all 0.2s cubic-bezier(0.01, 0.59, 1, 0.59);
+    fill: var(--text-color);
   }
 
   .arrow_next {
@@ -36,6 +37,7 @@
     height: 30px;
     right: -37px;
     transition: all 0.2s cubic-bezier(0.01, 0.59, 1, 0.59);
+    fill: var(--text-color);
   }
 
   .arrow_prev:hover, .arrow_prev:focus,
@@ -43,65 +45,58 @@
     scale: 1.1;
   }
 
+/* FOR mobile */
+  @media (max-width: 640px) {
+    .slide {
+      gap: 17px;
+      width: 585px;
+      height: 310px;
+    }
 
-
-  .slider_box::before {
-    position: absolute;
-    z-index: -1;
-    content: "";
-    width: 96%;
-    left: 13px;
-    border-bottom: 1px solid white;
   }
 
-  .slider_box::after {
-
-
-    z-index: -1;
-    content: "";
-    width: 13px;
-    height: 13px;
-    border-radius: 13px;
-    /* background-color:  white; */
-    padding: 4px;
-    background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 13 13" fill="none"><circle cx="6.5" cy="6.5" r="6" stroke="%23FEFEFE"/></svg>');
-  
-    position: absolute;
-    top: 40.5%;
-    left: 0;
-  
-  }
-
-  .point {
-    position: absolute;
-    top: 41.5%;
-    left: 4px;
-
-    z-index: -1;
-    content: "";
-    width: 5px;
-    height: 5px;
-    border-radius: 5px;
-    /* background-color:  white; */
-    background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="5" height="5" viewBox="0 0 5 5" fill="none"><circle cx="2.5" cy="2.5" r="2.5" fill="%23FEFEFE"/></svg>');
-  }
-  
+/* FOR planshet */
+@media (min-width: 640px) {
   .slide {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+    gap: 17px;
+    width: 440px;
+    height: 310px;
+  }
+
+
+
+
+}
+
+/* FOR desktop */
+@media (min-width: 1200px) {
+
+  .slide {
     gap: 17px;
     width: 585px;
     height: 310px;
-    border-radius: 5px;
-    background: var(--reviews-color);
-
-    /* 2 */
-    box-shadow: 2px 4px 15px 0px rgba(6, 12, 70, 0.10);
-    /* animation: slideFromRight 1s ease-out; */
-
   }
+  
+}
+
+
+.slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  /* gap: 17px;
+  width: 585px;
+  height: 310px; */
+  border-radius: 5px;
+  background: var(--reviews-color);
+
+  /* 2 */
+  box-shadow: 2px 4px 15px 0px rgba(6, 12, 70, 0.10);
+  /* animation: slideFromRight 1s ease-out; */
+
+}
+
 
   .slideAnimated {
     animation: slideFromRight 1s ease-out;
