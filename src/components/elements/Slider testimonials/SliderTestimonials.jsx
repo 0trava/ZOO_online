@@ -62,9 +62,7 @@ const SliderTestimonials = ({ reviews }) => {
 
       <div className={style.slider_box}>
 
-        {/* Buttons next / previos arrow*/}
-        <MdArrowBackIosNew className={style.arrow_prev} onClick={prevSlide}/>
-        <MdArrowForwardIos className={style.arrow_next} onClick={nextSlide}/>
+
       
       {/* slide 0 */}
       <div  className={`${style.slide} ${isAnimating ? style.slideAnimated : ''}`} onAnimationEnd={handleAnimationEnd}>
@@ -96,6 +94,10 @@ const SliderTestimonials = ({ reviews }) => {
           <p>{reviews[checkslide(currentIndex + 1)].text}</p>
         </div>
       </div>
+
+        {/* Buttons next / previos arrow*/}
+        <MdArrowBackIosNew className={style.arrow_prev} onClick={prevSlide}/>
+        <MdArrowForwardIos className={style.arrow_next} onClick={nextSlide}/>
 
       {/* BUTTONS */}
       <div className={style.btn_box}>
