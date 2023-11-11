@@ -44,6 +44,18 @@ const SliderTestimonials = ({ reviews }) => {
     }
   }
 
+  const checkzeroslide = (index) => {
+    console.log(currentIndex, reviews.length, index);
+
+    if (currentIndex === 0 ) {
+      console.log(reviews.length)
+      return reviews.length - 1
+    } else {
+      return currentIndex - 1
+    }
+
+  }
+
 
   return (
     <div className={style.carousel}>
@@ -53,7 +65,15 @@ const SliderTestimonials = ({ reviews }) => {
         {/* Buttons next / previos arrow*/}
         <MdArrowBackIosNew className={style.arrow_prev} onClick={prevSlide}/>
         <MdArrowForwardIos className={style.arrow_next} onClick={nextSlide}/>
-
+      
+      {/* slide 0 */}
+      <div  className={`${style.slide} ${isAnimating ? style.slideAnimated : ''}`} onAnimationEnd={handleAnimationEnd}>
+          <div className={style.avatar}>
+            <img src={reviews[checkzeroslide(currentIndex - 1)].avatar} alt={reviews[checkzeroslide(currentIndex - 1)].title}/>
+          </div>
+          <h2>{reviews[checkzeroslide(currentIndex - 1)].title}</h2>
+          <p>{reviews[checkzeroslide(currentIndex - 1)].text}</p>
+      </div>
 
 
 
