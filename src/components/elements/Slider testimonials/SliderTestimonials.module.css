@@ -13,6 +13,7 @@
   .arrow_prev {
     position: absolute;
     left: -37px;
+    top: 35%;
     width: 30px;
     height: 30px;
     transition: all 0.2s cubic-bezier(0.01, 0.59, 1, 0.59);
@@ -24,6 +25,7 @@
     width: 30px;
     height: 30px;
     right: -37px;
+    top: 35%;
     transition: all 0.2s cubic-bezier(0.01, 0.59, 1, 0.59);
     fill: var(--text-color);
   }
@@ -34,7 +36,6 @@
   }
 
   .slider_box {
-    width: 1230px;
     overflow: hidden;
     display: flex;
     gap: 48px;
@@ -50,8 +51,15 @@
   @media (max-width: 640px) {
     .slide {
       gap: 17px;
-      width: 585px;
+      min-width: 300px;
       height: 310px;
+    }
+
+    .slider_box {
+      width: 320px;
+      overflow: hidden;
+      display: flex;
+      gap: 48px;
     }
 
   }
@@ -60,8 +68,15 @@
 @media (min-width: 640px) {
   .slide {
     gap: 17px;
-    width: 440px;
+    min-width: 585px;
     height: 310px;
+  }
+
+  .slider_box {
+    max-width: 600px;
+    overflow: hidden;
+    display: flex;
+    gap: 48px;
   }
 
 
@@ -74,8 +89,15 @@
 
   .slide {
     gap: 17px;
-    width: 585px;
+    min-width: 585px;
     height: 310px;
+  }
+
+  .slider_box {
+    max-width: 1240px;
+    overflow: hidden;
+    display: flex;
+    gap: 48px;
   }
   
 }
@@ -87,7 +109,6 @@
   align-items: center;
   flex-direction: column;
   box-sizing: border-box;
-  min-width: 585px;
   border-radius: 5px;
   background: var(--reviews-color);
 
@@ -102,7 +123,7 @@
 
 
   .slideAnimated {
-    animation: slideFromRight 1s ease-out;
+    animation: slideFromRight 1s linear;
   }
 
   /* Animation */
