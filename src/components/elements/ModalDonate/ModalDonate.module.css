@@ -14,6 +14,17 @@
     width: 80vw;
     background: #F9F9F9;
     box-shadow: 0px 4px 24px 0px rgba(0, 0, 0, 0.19);
+    /* display: flex;
+    margin: 100px; */
+
+
+}
+
+.block {
+    padding: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 
 }
 
@@ -25,4 +36,10 @@
     font-weight: 700;
     line-height: 116.5%; /* 27.96px */
     text-transform: uppercase;
+    margin-bottom: 70px;
 }
+
+
+
+
+
