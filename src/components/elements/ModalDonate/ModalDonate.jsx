@@ -40,6 +40,27 @@ export const ModalDonate = () => {
             >
                 {({ errors, touched }) => (
                 <Form className={style.form}>
+
+                    {/* Chose for donate*/}
+                    <div className={style.block_donate}>
+                    <div className={style.input_block}>
+                    <p>Сhoose an animal</p>
+                    <Field name="firstName" id="input" className={style.input} placeholder=""/>
+                    {errors.firstName && touched.firstName ? (
+                        <div className={style.input_errors}>{errors.firstName}</div>
+                    ) : null}
+                    </div>
+
+                    <div className={style.input_block}>
+                    <p>To donate</p>
+                    <Field name="firstName" id="input" className={style.input} placeholder=""/>
+                    {errors.firstName && touched.firstName ? (
+                        <div className={style.input_errors}>{errors.firstName}</div>
+                    ) : null}
+                    </div>
+
+                    </div>
+
                     {/* Name */}
                     <div className={style.input_block}>
                     <Field name="firstName" id="input" className={style.input} placeholder="Name"/>
@@ -47,8 +68,6 @@ export const ModalDonate = () => {
                         <div className={style.input_errors}>{errors.firstName}</div>
                     ) : null}
                     </div>
-
-
 
                     {/* Email */}
                     <div className={style.input_block}>

@@ -39,6 +39,74 @@
     margin-bottom: 70px;
 }
 
+/* Form */
+
+.input {
+    max-width: 335px;
+    height: 56px;
+    border-radius: 5px;
+    border: 1px solid var(--Gray-3, #828282);
+}
+
+.input p {
+    background: #F9F9F9;
+    color: var(--Gray-3, #828282);
+    font-family: Roboto;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 116.5%; /* 16.31px */
+}
+
+/* Input message */
+.input_message {
+    position: relative;
+    z-index: 21;
+    width: 383px;
+    height: 115px;
+    border-radius: 3px;
+    border: 1px solid var(--Gray-4, #BDBDBD);
+    margin-bottom: 25px;
+}
+
+.input_message p {
+    position: absolute;
+    background-color: #333333;
+    z-index: 2;
+    top: -12px;
+    left: 3px;
+    height: 12px;
+    padding: 5px;
+    pointer-events: none;
+
+
+    color: var(--Gray-4, #BDBDBD);
+    font-family: Roboto;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+
+
+.input_message .input {
+    height: 100%;
+    resize: none;
+    padding-top: 10px;
+    border-color: transparent;
+
+    color: #BDBDBD;
+    font-family: Roboto;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.input_message:focus-visible {
+    border-color: transparent;
+}
 
 
 
