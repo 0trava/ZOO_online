@@ -24,7 +24,7 @@ export const App = () => {
       <Testimonials/>
       <Map/>
       <Footer/>
-      <ModalDonate/>
+      {/* <ModalDonate/> */}
     </div>
   );
 };
