@@ -9,7 +9,7 @@ import PetsInZoo from "./Page_section/Pets in zoo/PetsInZoo";
 import Testimonials from "./Page_section/Testimonials/Testimonials";
 
 import style from './App.module.css';
-import { ModalDonate } from "./elements/ModalDonate/ModalDonate";
+// import { ModalDonate } from "./elements/ModalDonate/ModalDonate";
 
 export const App = () => {
 
