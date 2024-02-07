@@ -4,13 +4,13 @@ import SliderZoo from 'components/elements/Slider in zoo/SliderZoo';
 
 const PetsInZoo = () => {
   const images = [
-    'https://static.fotogora.ru/fotogora/wysiwyg/wp-content/uploads/2013/11/%C2%A9David-BenardAweso.jpg',
-    'https://static.fotogora.ru/fotogora/wysiwyg/wp-content/uploads/2013/11/%C2%A9Thorsten-Scheel.jpg',
-    'https://static.fotogora.ru/fotogora/wysiwyg/wp-content/uploads/2013/11/%C2%A9Gary-Brookshaw.jpg',
-    'https://static.fotogora.ru/fotogora/wysiwyg/wp-content/uploads/2013/11/%C2%A9Robert-Cinega.jpg',
-    'https://static.fotogora.ru/fotogora/wysiwyg/wp-content/uploads/2013/11/%C2%A9Scott-SpaethAwesom.jpg',
-    'https://static.fotogora.ru/fotogora/wysiwyg/wp-content/uploads/2013/11/%C2%A9sergei-gladyshev-2.jpg',
-    'https://static.fotogora.ru/fotogora/wysiwyg/wp-content/uploads/2013/11/%C2%A9sergei-gladyshev.jpg'
+    'https://storage.googleapis.com/pod_public/1300/83659.jpg',
+    'https://kyiv24.news/wp-content/uploads/2023/02/photo_2023-02-02_14-45-56-768x768.jpg',
+    'https://i.pinimg.com/564x/0a/ac/73/0aac7316e5aabf7f05710be4d009e14f.jpg',
+    'https://i.pinimg.com/564x/8d/96/91/8d969183a46442799ad642821b3b67c7.jpg',
+    'https://i.pinimg.com/564x/0a/65/c6/0a65c6663e5b93a9fa05227b5ef3c52e.jpg',
+    'https://i.pinimg.com/564x/39/7b/c2/397bc2a1b0e85cd321a9aee41592d992.jpg',
+    'https://i.pinimg.com/564x/55/0d/90/550d90ff3af6434a85eb09a5bf057cad.jpg'
     // Add more image URLs here
   ];
 
